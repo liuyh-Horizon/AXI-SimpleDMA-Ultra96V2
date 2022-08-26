@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug 26 20:43:07 2022
+# Process ID: 92501
+# Current directory: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/Accumulator_bd_auto_pc_0_synth_1
+# Command line: vivado -log Accumulator_bd_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Accumulator_bd_auto_pc_0.tcl
+# Log file: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/Accumulator_bd_auto_pc_0_synth_1/Accumulator_bd_auto_pc_0.vds
+# Journal file: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/Accumulator_bd_auto_pc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Accumulator_bd_auto_pc_0.tcl -notrace

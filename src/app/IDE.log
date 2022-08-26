@@ -1,0 +1,13 @@
+20:59:32 INFO  : Launching XSCT server: xsct -n  -interactive /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/temp_xsdb_launch_script.tcl
+20:59:33 INFO  : Registering command handlers for Vitis TCF services
+20:59:36 INFO  : Platform repository initialization has completed.
+20:59:37 INFO  : XSCT server has started successfully.
+20:59:38 INFO  : plnx-install-location is set to ''
+20:59:38 INFO  : Successfully done setting XSCT server connection channel  
+20:59:38 INFO  : Successfully done query RDI_DATADIR 
+20:59:38 INFO  : Successfully done setting workspace for the tool. 
+21:00:42 INFO  : Result from executing command 'getProjects': AXI_DMA_Accumulator_Platform
+21:00:42 INFO  : Result from executing command 'getPlatforms': 
+21:02:30 INFO  : Result from executing command 'getProjects': AXI_DMA_Accumulator_Platform
+21:02:30 INFO  : Result from executing command 'getPlatforms': AXI_DMA_Accumulator_Platform|/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform/AXI_DMA_Accumulator_Platform.xpfm
+21:04:42 INFO  : Checking for BSP changes to sync application flags for project 'AXI_DMA_Accumulator_app'...

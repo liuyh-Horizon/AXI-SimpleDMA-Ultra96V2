@@ -1,0 +1,300 @@
+
+*** Running vivado
+    with args -log Accumulator_bd_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Accumulator_bd_wrapper.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Accumulator_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2427.121 ; gain = 8.012 ; free physical = 7629 ; free virtual = 26825
+Command: synth_design -top Accumulator_bd_wrapper -part xczu3eg-sbva484-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 93981
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2757.582 ; gain = 29.832 ; free physical = 5907 ; free virtual = 25102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_wrapper' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/hdl/Accumulator_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_Accumulator_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_Accumulator_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_Accumulator_0_0' (1#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_Accumulator_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_axi_dma_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_axi_dma_0_0' (2#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'Accumulator_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'Accumulator_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'Accumulator_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+WARNING: [Synth 8-7071] port 's2mm_introut' of module 'Accumulator_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'Accumulator_bd_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'Accumulator_bd_axi_dma_0_0' has 64 connections declared, but only 59 given [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:200]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_axi_gpio_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_axi_gpio_0_0' (3#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_axi_gpio_0_1' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_axi_gpio_0_1' (4#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_axi_smc_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_axi_smc_0' (5#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_ps8_0_axi_periph_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:558]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_13S542A' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1220]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_13S542A' (6#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1220]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_3YJRAT' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1345]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_3YJRAT' (7#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1345]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_NYM9JX' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1477]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_NYM9JX' (8#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1477]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_M4TFON' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1609]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_auto_ds_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_auto_ds_0' (9#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_auto_pc_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_auto_pc_0' (10#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_M4TFON' (11#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1609]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_xbar_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_xbar_0' (12#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'Accumulator_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1179]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'Accumulator_bd_xbar_0' is unconnected for instance 'xbar' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1179]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'Accumulator_bd_xbar_0' has 40 connections declared, but only 38 given [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:1179]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_ps8_0_axi_periph_0' (13#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:558]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_rst_ps8_0_100M_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_rst_ps8_0_100M_0' (14#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'Accumulator_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:469]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'Accumulator_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:469]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'Accumulator_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:469]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'Accumulator_bd_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:469]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'Accumulator_bd_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:469]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator_bd_zynq_ultra_ps_e_0_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_zynq_ultra_ps_e_0_0' (15#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/.Xil/Vivado-93921-atlas/realtime/Accumulator_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'Accumulator_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:476]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'Accumulator_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:476]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'Accumulator_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:476]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'Accumulator_bd_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:476]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'Accumulator_bd_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:476]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd' (16#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/synth/Accumulator_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator_bd_wrapper' (17#1) [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/hdl/Accumulator_bd_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2804.488 ; gain = 76.738 ; free physical = 6651 ; free virtual = 25848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2821.332 ; gain = 93.582 ; free physical = 6711 ; free virtual = 25908
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2821.332 ; gain = 93.582 ; free physical = 6711 ; free virtual = 25908
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2821.332 ; gain = 0.000 ; free physical = 6704 ; free virtual = 25901
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_bd_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'Accumulator_bd_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_dma_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_dma_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_gpio_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_gpio_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_bd_i/axi_gpio_1'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_in_context.xdc] for cell 'Accumulator_bd_i/axi_gpio_1'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_bd_i/rst_ps8_0_100M'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_in_context.xdc] for cell 'Accumulator_bd_i/rst_ps8_0_100M'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_in_context.xdc] for cell 'Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/Accumulator_bd_axi_smc_0/Accumulator_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_smc'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/Accumulator_bd_axi_smc_0/Accumulator_bd_axi_smc_0_in_context.xdc] for cell 'Accumulator_bd_i/axi_smc'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_in_context.xdc] for cell 'Accumulator_bd_i/Accumulator_0'
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_in_context.xdc] for cell 'Accumulator_bd_i/Accumulator_0'
+Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2865.156 ; gain = 0.000 ; free physical = 6618 ; free virtual = 25815
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2865.156 ; gain = 0.000 ; free physical = 6618 ; free virtual = 25815
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2865.156 ; gain = 137.406 ; free physical = 6684 ; free virtual = 25880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2865.156 ; gain = 137.406 ; free physical = 6684 ; free virtual = 25880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/axi_dma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for Accumulator_bd_i/Accumulator_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2865.156 ; gain = 137.406 ; free physical = 6684 ; free virtual = 25880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2865.156 ; gain = 137.406 ; free physical = 6686 ; free virtual = 25883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2865.156 ; gain = 137.406 ; free physical = 6673 ; free virtual = 25874
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 3350.617 ; gain = 622.867 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 3350.617 ; gain = 622.867 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 3370.656 ; gain = 642.906 ; free physical = 6107 ; free virtual = 25306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |Accumulator_bd_xbar_0              |         1|
+|2     |Accumulator_bd_auto_ds_0           |         1|
+|3     |Accumulator_bd_auto_pc_0           |         1|
+|4     |Accumulator_bd_Accumulator_0_0     |         1|
+|5     |Accumulator_bd_axi_dma_0_0         |         1|
+|6     |Accumulator_bd_axi_gpio_0_0        |         1|
+|7     |Accumulator_bd_axi_gpio_0_1        |         1|
+|8     |Accumulator_bd_axi_smc_0           |         1|
+|9     |Accumulator_bd_rst_ps8_0_100M_0    |         1|
+|10    |Accumulator_bd_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |Accumulator_bd_Accumulator_0     |     1|
+|2     |Accumulator_bd_auto_ds           |     1|
+|3     |Accumulator_bd_auto_pc           |     1|
+|4     |Accumulator_bd_axi_dma_0         |     1|
+|5     |Accumulator_bd_axi_gpio_0        |     2|
+|7     |Accumulator_bd_axi_smc           |     1|
+|8     |Accumulator_bd_rst_ps8_0_100M    |     1|
+|9     |Accumulator_bd_xbar              |     1|
+|10    |Accumulator_bd_zynq_ultra_ps_e_0 |     1|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.594 ; gain = 648.844 ; free physical = 6109 ; free virtual = 25308
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 3376.594 ; gain = 605.020 ; free physical = 6147 ; free virtual = 25346
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 3376.602 ; gain = 648.844 ; free physical = 6147 ; free virtual = 25346
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3376.602 ; gain = 0.000 ; free physical = 6142 ; free virtual = 25341
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3403.375 ; gain = 0.000 ; free physical = 6173 ; free virtual = 25372
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 3417.312 ; gain = 990.191 ; free physical = 6309 ; free virtual = 25508
+INFO: [Common 17-1381] The checkpoint '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/Accumulator_bd_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Accumulator_bd_wrapper_utilization_synth.rpt -pb Accumulator_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 26 20:49:18 2022...

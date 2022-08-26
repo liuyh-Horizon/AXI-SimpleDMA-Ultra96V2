@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v,1661521289,verilog,,/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/code/Accumulator.v,,axis_data_fifo_0,,,../../../../Accumulator.ip_user_files/ipstatic/hdl,,,,,
+/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/code/Accumulator.v,1661537438,verilog,,/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/sim/Accumulator_tb.v,,Accumulator,,,../../../../Accumulator.ip_user_files/ipstatic/hdl,,,,,
+/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/sim/Accumulator_tb.v,1661537260,verilog,,,,Accumulator_tb,,,../../../../Accumulator.ip_user_files/ipstatic/hdl,,,,,
