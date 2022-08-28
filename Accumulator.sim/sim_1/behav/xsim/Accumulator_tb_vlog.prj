@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../Accumulator.ip_user_files/ipstatic/hdl" \
+verilog xil_defaultlib  --include "../../../../Accumulator.ip_user_files/ipstatic/hdl" --include "../../../../src/bd/Accumulator_bd/ipshared/ec67/hdl" --include "../../../../src/bd/Accumulator_bd/ipshared/da1e/hdl" --include "../../../../src/bd/Accumulator_bd/ipshared/25b7/hdl/verilog" --include "../../../../src/bd/Accumulator_bd/ipshared/896c/hdl/verilog" --include "/usr/software/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../../Accumulator.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" \
 "../../../../src/code/Accumulator.v" \
 "../../../../src/sim/Accumulator_tb.v" \

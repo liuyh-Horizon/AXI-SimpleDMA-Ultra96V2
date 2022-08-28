@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.gen/sources_1/ip/axis_data_fifo_0/sim/axis_data_fifo_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module axis_data_fifo_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/code/Accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/code/Accumulator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/sim/Accumulator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/sim/Accumulator_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator_tb
