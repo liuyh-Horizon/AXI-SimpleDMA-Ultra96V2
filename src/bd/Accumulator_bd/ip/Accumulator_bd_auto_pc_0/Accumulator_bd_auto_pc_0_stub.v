@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Aug 26 20:45:25 2022
+// Date        : Fri Aug 26 20:45:23 2022
 // Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top Accumulator_bd_auto_pc_0 -prefix
+//               Accumulator_bd_auto_pc_0_ Accumulator_bd_auto_pc_0_stub.v
 // Design      : Accumulator_bd_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-i

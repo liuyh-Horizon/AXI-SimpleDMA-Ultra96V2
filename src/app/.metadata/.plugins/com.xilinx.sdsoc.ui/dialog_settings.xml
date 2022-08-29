@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform"/>
+	<item key="sdx.custom.platform.repository.locations" value="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform;/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform"/>
 </section>

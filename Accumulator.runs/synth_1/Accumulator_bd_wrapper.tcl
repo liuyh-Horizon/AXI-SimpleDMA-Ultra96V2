@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 6
+set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu3eg-sbva484-1-i
 
@@ -105,10 +107,6 @@ set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projec
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_2/bd_a1b1_arsw_0_ooc.xdc]
@@ -131,6 +129,10 @@ set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projec
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_25/bd_a1b1_m00bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/Accumulator_bd_ooc.xdc]
 
 OPTRACE "Adding files" END { }

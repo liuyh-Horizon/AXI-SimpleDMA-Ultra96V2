@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Aug 28 02:00:04 2022
-# Process ID: 35981
+# Start of session at: Mon Aug 29 01:49:33 2022
+# Process ID: 70135
 # Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.runs/synth_1
 # Command line: vivado -log Accumulator_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Accumulator_bd_wrapper.tcl
 # Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.runs/synth_1/Accumulator_bd_wrapper.vds

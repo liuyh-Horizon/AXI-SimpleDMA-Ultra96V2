@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AXI_DMA_Accumulator_app" location="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_app" platform="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform/AXI_DMA_Accumulator_Platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="AXI_DMA_Accumulator_app_system" sysConfig="AXI_DMA_Accumulator_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="5739de1796befbb6714727eee1e2c20c">
-  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.881133667">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AXI_DMA_Accumulator_app" location="/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/app/AXI_DMA_Accumulator_app" platform="/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/app/AXI_DMA_Accumulator_Platform/export/AXI_DMA_Accumulator_Platform/AXI_DMA_Accumulator_Platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="AXI_DMA_Accumulator_app_system" sysConfig="AXI_DMA_Accumulator_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="5739de1796befbb6714727eee1e2c20c">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1957591900" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
-    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1671461280" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.462589869" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="hello_world"/>

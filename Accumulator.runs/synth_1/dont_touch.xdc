@@ -25,12 +25,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator
 # IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_xbar_0 || ORIG_REF_NAME==Accumulator_bd_xbar_0} -quiet] -quiet
 
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_ds_0 || ORIG_REF_NAME==Accumulator_bd_auto_ds_0} -quiet] -quiet
-
-# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_pc_0 || ORIG_REF_NAME==Accumulator_bd_auto_pc_0} -quiet] -quiet
-
 # IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_ps8_0_axi_periph_0/Accumulator_bd_ps8_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_ps8_0_axi_periph_0 || ORIG_REF_NAME==Accumulator_bd_ps8_0_axi_periph_0} -quiet] -quiet
 
@@ -42,5 +36,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator
 
 # IP: ip/axis_data_fifo_0/axis_data_fifo_0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_data_fifo_0 || ORIG_REF_NAME==axis_data_fifo_0} -quiet] -quiet
+
+# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_ds_0 || ORIG_REF_NAME==Accumulator_bd_auto_ds_0} -quiet] -quiet
+
+# IP: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_pc_0 || ORIG_REF_NAME==Accumulator_bd_auto_pc_0} -quiet] -quiet
 
 # XDC: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/Accumulator_bd_ooc.xdc

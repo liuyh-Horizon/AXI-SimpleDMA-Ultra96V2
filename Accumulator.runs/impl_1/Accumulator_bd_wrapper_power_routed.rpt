@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Sun Aug 28 02:01:58 2022
+| Date             : Mon Aug 29 01:51:33 2022
 | Host             : Yuhao running 64-bit Ubuntu 22.04.1 LTS
 | Command          : report_power -file Accumulator_bd_wrapper_power_routed.rpt -pb Accumulator_bd_wrapper_power_summary_routed.pb -rpx Accumulator_bd_wrapper_power_routed.rpx
 | Design           : Accumulator_bd_wrapper
@@ -52,17 +52,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.017 |        3 |       --- |             --- |
-| CLB Logic                |     0.023 |    14120 |       --- |             --- |
+| Clocks                   |     0.016 |        3 |       --- |             --- |
+| CLB Logic                |     0.023 |    14163 |       --- |             --- |
 |   LUT as Distributed RAM |     0.015 |      490 |     28800 |            1.70 |
-|   LUT as Logic           |     0.006 |     4237 |     70560 |            6.00 |
-|   Register               |    <0.001 |     6840 |    141120 |            4.85 |
+|   LUT as Logic           |     0.006 |     4250 |     70560 |            6.02 |
+|   Register               |    <0.001 |     6859 |    141120 |            4.86 |
 |   LUT as Shift Register  |    <0.001 |      180 |     28800 |            0.63 |
 |   CARRY8                 |    <0.001 |       45 |      8820 |            0.51 |
 |   Others                 |     0.000 |      489 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |        7 |     70560 |           <0.01 |
-| Signals                  |     0.009 |     9877 |       --- |             --- |
-| Block RAM                |     0.002 |      7.5 |       216 |            3.47 |
+| Signals                  |     0.009 |     9899 |       --- |             --- |
+| Block RAM                |     0.002 |        8 |       216 |            3.70 |
 | PS8                      |     1.755 |        1 |       --- |             --- |
 | Static Power             |     0.316 |          |           |                 |
 |   PS Static              |     0.100 |          |           |                 |
@@ -165,8 +165,8 @@ Table of Contents
 |   Accumulator_bd_i     |     1.805 |
 |     Accumulator_0      |     0.003 |
 |       inst             |     0.003 |
-|     axi_dma_0          |     0.007 |
-|       U0               |     0.007 |
+|     axi_dma_0          |     0.006 |
+|       U0               |     0.006 |
 |     axi_smc            |     0.034 |
 |       inst             |     0.034 |
 |     ps8_0_axi_periph   |     0.006 |

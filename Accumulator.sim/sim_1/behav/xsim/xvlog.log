@@ -2,5 +2,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/F
 INFO: [VRFC 10-311] analyzing module axis_data_fifo_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/code/Accumulator.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator
+INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/code/Accumulator.v:65]
+WARNING: [VRFC 10-2938] 'rst' is already implicitly declared on line 65 [/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/code/Accumulator.v:113]
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/sim/Accumulator_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Accumulator_tb

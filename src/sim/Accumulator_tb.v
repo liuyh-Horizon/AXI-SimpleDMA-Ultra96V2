@@ -48,15 +48,13 @@ module Accumulator_tb;
         wire                [7 : 0]     m_axis_tkeep;
         wire                            m_axis_tlast;
     
-    reg rst;
-    
     Accumulator Accumulator
     (
 
     // System
     
         .sys_clk(sys_clk),
-        .sys_rst_n(sys_rst_n & (!rst)),
+        .sys_rst_n(sys_rst_n),
         
     // Input
     
@@ -68,7 +66,7 @@ module Accumulator_tb;
         
     // AXI Stream Interface
     
-        .s_axis_aresetn(sys_rst_n & (!rst)),
+        .s_axis_aresetn(sys_rst_n),
         .s_axis_aclk(sys_clk),
         .s_axis_tvalid(s_axis_tvalid),
         .s_axis_tready(s_axis_tready),
@@ -76,7 +74,7 @@ module Accumulator_tb;
         .s_axis_tkeep(s_axis_tkeep),
         .s_axis_tlast(s_axis_tlast),
         
-        .m_axis_aresetn(sys_rst_n & (!rst)),
+        .m_axis_aresetn(sys_rst_n),
         .m_axis_aclk(sys_clk),
         .m_axis_tvalid(m_axis_tvalid),
         .m_axis_tready(m_axis_tready),
@@ -91,8 +89,6 @@ module Accumulator_tb;
     initial begin
     
         // Initialize Inputs
-            
-            rst = 0;
         
             sys_clk = 0;
             sys_rst_n = 0;
@@ -123,14 +119,12 @@ module Accumulator_tb;
                     s_axis_tlast    <= 0;
                     s_axis_tdata    <= 0;
                     wr_step         <= 0;
-                    rst             <= 0;
                     cnt             <= 0;
                 end
                 else begin
                     case (wr_step)
                     
                         0   :   begin
-                                    rst         <= 0;
                                     accu_en     <= 1;
                                     
                                     if (s_axis_tready)
@@ -190,7 +184,7 @@ module Accumulator_tb;
                                             s_axis_tlast    <= 0;
                                         end
                                         else begin
-                                            wr_step    <= 3;
+                                            wr_step         <= 3;
                                             s_axis_tkeep    <= 0;
                                             s_axis_tlast    <= 0;
                                         end
@@ -202,21 +196,18 @@ module Accumulator_tb;
                                     s_axis_tkeep    <= 0;
                                     s_axis_tlast    <= 0;
                                     cnt             <= 0;
-                                    if (m_axis_tvalid)
+                                    if (accu_finished)
                                         begin
                                             accu_en         <= 0;
-                                            rst             <= 1;
-                                            wr_step         <= 4;
+                                            wr_step         <= 0;
                                         end
                                         else begin
                                             accu_en         <= 1;
-                                            rst             <= 0;
                                             wr_step         <= 3;
                                         end
                                 end
                     
                         4   :   begin
-                                    rst             <= 0;
                                     s_axis_tvalid   <= 0;
                                     s_axis_tdata    <= 0;
                                     s_axis_tkeep    <= 0;

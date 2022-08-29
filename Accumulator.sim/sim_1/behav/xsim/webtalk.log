@@ -2,12 +2,12 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Aug 28 01:36:25 2022
-# Process ID: 22240
+# Start of session at: Mon Aug 29 01:43:39 2022
+# Process ID: 23581
 # Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
 source /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Aug 28 01:36:25 2022...
+INFO: [Common 17-206] Exiting Webtalk at Mon Aug 29 01:43:39 2022...

@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Fri Aug 26 20:45:16 2022
+-- Date        : Fri Aug 26 20:45:15 2022
 -- Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top Accumulator_bd_xbar_0 -prefix
+--               Accumulator_bd_xbar_0_ Accumulator_bd_xbar_0_stub.vhdl
 -- Design      : Accumulator_bd_xbar_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu3eg-sbva484-1-i

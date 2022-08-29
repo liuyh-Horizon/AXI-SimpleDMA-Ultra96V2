@@ -62,8 +62,8 @@ wire                in_m_axis_tlast;
 
 axis_data_fifo_0 input_fifo 
 (
-    .s_axis_aresetn(s_axis_aresetn),    // input    wire                s_axis_aresetn
-    .s_axis_aclk(s_axis_aclk),          // input    wire                s_axis_aclk
+    .s_axis_aresetn(s_axis_aresetn & (!rst)),    // input    wire                s_axis_aresetn
+    .s_axis_aclk(s_axis_aclk),                  // input    wire                s_axis_aclk
     
     .s_axis_tvalid(s_axis_tvalid),      // input    wire                s_axis_tvalid
     .s_axis_tready(s_axis_tready),      // output   wire                s_axis_tready
@@ -110,10 +110,13 @@ reg                 [63 : 0]    cnt;
 reg                 [7 : 0]     step;
 reg                 [63 : 0]    accu_length;
 
+reg                             rst;
+
 always @(posedge sys_clk or negedge sys_rst_n)
     begin
         if (!sys_rst_n)
             begin
+                rst                 <= 0;
                 sum                 <= 0;
                 cnt                 <= 0;
                 step                <= 0;
@@ -131,6 +134,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                         case (step)
                         
                             0   :   begin
+                                        rst                 <= 0;
                                         sum                 <= sum;
                                         cnt                 <= 0;
                                         accu_finished       <= 0;
@@ -152,6 +156,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     end
                         
                             1   :   begin
+                                        rst                 <= 0;
                                         sum                 <= sum;
                                         accu_finished       <= 0;
                                         out_s_axis_tvalid   <= 0;
@@ -174,6 +179,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     end
                         
                             2   :   begin
+                                        rst                 <= 0;
                                         sum                 <= sum;
                                         cnt                 <= cnt;
                                         step                <= 3;
@@ -187,6 +193,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     end
                         
                             3   :   begin
+                                        rst                 <= 0;
                                         sum                 <= sum + signed_in;
                                         cnt                 <= cnt;
                                         out_s_axis_tvalid   <= 0;
@@ -215,7 +222,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         
                                         if (out_s_axis_tready)
                                             begin
-                                                accu_finished       <= 1;
+                                                rst                 <= 0;
+                                                accu_finished       <= 0;
                                                 sum                 <= sum;
                                                 out_s_axis_tvalid   <= 1;
                                                 out_s_axis_tdata    <= sum;
@@ -224,6 +232,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                                 step                <= 5;
                                             end
                                             else begin
+                                                rst                 <= 0;
                                                 accu_finished       <= 0;
                                                 sum                 <= sum;
                                                 out_s_axis_tvalid   <= 0;
@@ -235,10 +244,51 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     end
                                     
                             5   :   begin
+                                        rst                 <= 1;
                                         sum                 <= 0;
                                         cnt                 <= 0;
-                                        step                <= 5;
-                                        accu_finished       <= 1;
+                                        step                <= 6;
+                                        accu_finished       <= 0;
+                                        in_m_axis_tready    <= 0;
+                                        out_s_axis_tvalid   <= 0;
+                                        out_s_axis_tdata    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
+                                        accu_length         <= 0;
+                                    end
+                                    
+                            6   :   begin
+                                        rst                 <= 0;
+                                        sum                 <= 0;
+                                        cnt                 <= 0;
+                                        if (!s_axis_tready)
+                                            begin
+                                                step        <= 7;
+                                            end
+                                            else begin
+                                                step        <= 6;
+                                            end
+                                        accu_finished       <= 0;
+                                        in_m_axis_tready    <= 0;
+                                        out_s_axis_tvalid   <= 0;
+                                        out_s_axis_tdata    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
+                                        accu_length         <= 0;
+                                    end
+                                    
+                            7   :   begin
+                                        rst                 <= 0;
+                                        sum                 <= 0;
+                                        cnt                 <= 0;
+                                        step                <= 7;
+                                        if (s_axis_tready)
+                                            begin
+                                                accu_finished       <= 1;
+                                            end
+                                            else begin
+                                                accu_finished       <= 0;
+                                            end
                                         in_m_axis_tready    <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
@@ -248,6 +298,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                     end
                                     
                             default :   begin
+                                            rst                 <= 0;
                                             sum                 <= 0;
                                             cnt                 <= 0;
                                             step                <= 0;
@@ -263,6 +314,7 @@ always @(posedge sys_clk or negedge sys_rst_n)
                         endcase
                     end
                     else begin
+                        rst                 <= 0;
                         sum                 <= 0;
                         cnt                 <= 0;
                         step                <= 0;

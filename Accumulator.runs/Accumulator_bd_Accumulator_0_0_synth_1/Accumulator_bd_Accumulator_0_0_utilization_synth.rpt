@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri Aug 26 20:43:00 2022
-| Host         : atlas running 64-bit Ubuntu 20.04.1 LTS
+| Date         : Mon Aug 29 01:46:29 2022
+| Host         : Yuhao running 64-bit Ubuntu 22.04.1 LTS
 | Command      : report_utilization -file Accumulator_bd_Accumulator_0_0_utilization_synth.rpt -pb Accumulator_bd_Accumulator_0_0_utilization_synth.pb
 | Design       : Accumulator_bd_Accumulator_0_0
 | Device       : xczu3egsbva484-1
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| CLB LUTs*               |  382 |     0 |     70560 |  0.54 |
-|   LUT as Logic          |  382 |     0 |     70560 |  0.54 |
+| CLB LUTs*               |  386 |     0 |     70560 |  0.55 |
+|   LUT as Logic          |  386 |     0 |     70560 |  0.55 |
 |   LUT as Memory         |    0 |     0 |     28800 |  0.00 |
-| CLB Registers           |  392 |     0 |    141120 |  0.28 |
-|   Register as Flip Flop |  392 |     0 |    141120 |  0.28 |
+| CLB Registers           |  381 |     0 |    141120 |  0.27 |
+|   Register as Flip Flop |  381 |     0 |    141120 |  0.27 |
 |   Register as Latch     |    0 |     0 |    141120 |  0.00 |
 | CARRY8                  |   19 |     0 |      8820 |  0.22 |
 | F7 Muxes                |    0 |     0 |     35280 |  0.00 |
@@ -58,9 +58,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 1     |          Yes |           - |          Set |
-| 265   |          Yes |           - |        Reset |
+| 266   |          Yes |           - |        Reset |
 | 16    |          Yes |         Set |            - |
-| 110   |          Yes |       Reset |            - |
+| 98    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,13 +149,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |  265 |            Register |
-| LUT4     |  160 |                 CLB |
-| LUT6     |  140 |                 CLB |
-| FDRE     |  110 |            Register |
-| LUT3     |   78 |                 CLB |
-| LUT2     |   74 |                 CLB |
-| LUT5     |   46 |                 CLB |
+| FDCE     |  266 |            Register |
+| LUT4     |  162 |                 CLB |
+| LUT6     |  141 |                 CLB |
+| FDRE     |   98 |            Register |
+| LUT3     |   79 |                 CLB |
+| LUT2     |   75 |                 CLB |
+| LUT5     |   48 |                 CLB |
 | CARRY8   |   19 |                 CLB |
 | FDSE     |   16 |            Register |
 | LUT1     |    7 |                 CLB |
