@@ -60,8 +60,8 @@ module Accumulator
 wire                in_m_axis_tvalid;
 reg                 in_m_axis_tready;
 wire    [63 : 0]    in_m_axis_tdata;
-//wire    [7 : 0]     in_m_axis_tkeep;
-//wire                in_m_axis_tlast;
+wire    [7 : 0]     in_m_axis_tkeep;
+wire                in_m_axis_tlast;
 
 reg                             rst;
 
@@ -73,21 +73,21 @@ axis_data_fifo_0 input_fifo
     .s_axis_tvalid(s_axis_tvalid),      // input    wire                s_axis_tvalid
     .s_axis_tready(s_axis_tready),      // output   wire                s_axis_tready
     .s_axis_tdata(s_axis_tdata),        // input    wire    [63 : 0]    s_axis_tdata
-    //.s_axis_tkeep(s_axis_tkeep),        // input    wire    [7 : 0]     s_axis_tkeep
-    //.s_axis_tlast(s_axis_tlast),        // input    wire                s_axis_tlast
+    .s_axis_tkeep(s_axis_tkeep),        // input    wire    [7 : 0]     s_axis_tkeep
+    .s_axis_tlast(s_axis_tlast),        // input    wire                s_axis_tlast
   
     .m_axis_tvalid(in_m_axis_tvalid),   // output   wire                m_axis_tvalid
     .m_axis_tready(in_m_axis_tready),   // input    wire                m_axis_tready
-    .m_axis_tdata(in_m_axis_tdata)     // output   wire    [63 : 0]    m_axis_tdata
-    //.m_axis_tkeep(in_m_axis_tkeep),     // output   wire    [7 : 0]     m_axis_tkeep
-    //.m_axis_tlast(in_m_axis_tlast)      // output   wire                m_axis_tlast
+    .m_axis_tdata(in_m_axis_tdata),     // output   wire    [63 : 0]    m_axis_tdata
+    .m_axis_tkeep(in_m_axis_tkeep),     // output   wire    [7 : 0]     m_axis_tkeep
+    .m_axis_tlast(in_m_axis_tlast)      // output   wire                m_axis_tlast
 );
     
 reg                 out_s_axis_tvalid;
 wire                out_s_axis_tready;
 reg     [63 : 0]    out_s_axis_tdata;
-//reg     [7 : 0]     out_s_axis_tkeep;
-//reg                 out_s_axis_tlast;
+reg     [7 : 0]     out_s_axis_tkeep;
+reg                 out_s_axis_tlast;
 
 axis_data_fifo_0 output_fifo 
 (
@@ -97,14 +97,14 @@ axis_data_fifo_0 output_fifo
     .s_axis_tvalid(out_s_axis_tvalid),      // input    wire                s_axis_tvalid
     .s_axis_tready(out_s_axis_tready),      // output   wire                s_axis_tready
     .s_axis_tdata(out_s_axis_tdata),        // input    wire    [63 : 0]    s_axis_tdata
-    //.s_axis_tkeep(out_s_axis_tkeep),        // input    wire    [7 : 0]     s_axis_tkeep
-    //.s_axis_tlast(out_s_axis_tlast),        // input    wire                s_axis_tlast
+    .s_axis_tkeep(out_s_axis_tkeep),        // input    wire    [7 : 0]     s_axis_tkeep
+    .s_axis_tlast(out_s_axis_tlast),        // input    wire                s_axis_tlast
   
     .m_axis_tvalid(m_axis_tvalid),          // output   wire                m_axis_tvalid
     .m_axis_tready(m_axis_tready),          // input    wire                m_axis_tready
-    .m_axis_tdata(m_axis_tdata)            // output   wire    [63 : 0]    m_axis_tdata
-    //.m_axis_tkeep(m_axis_tkeep),            // output   wire    [7 : 0]     m_axis_tkeep
-    //.m_axis_tlast(m_axis_tlast)             // output   wire                m_axis_tlast
+    .m_axis_tdata(m_axis_tdata),            // output   wire    [63 : 0]    m_axis_tdata
+    .m_axis_tkeep(m_axis_tkeep),            // output   wire    [7 : 0]     m_axis_tkeep
+    .m_axis_tlast(m_axis_tlast)             // output   wire                m_axis_tlast
 );
 
 wire    signed      [63 : 0]    signed_in;
@@ -131,8 +131,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                 in_m_axis_tready    <= 0;
                 out_s_axis_tvalid   <= 0;
                 out_s_axis_tdata    <= 0;
-                //out_s_axis_tkeep    <= 0;
-                //out_s_axis_tlast    <= 0;
+                out_s_axis_tkeep    <= 0;
+                out_s_axis_tlast    <= 0;
                 accu_length         <= 0;
             end
             else begin
@@ -147,8 +147,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         accu_finished       <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         in_m_axis_tready    <= 0;
                                         
                                         //if (in_m_axis_tvalid && (in_m_axis_tkeep==8'b1111_1111))
@@ -169,8 +169,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         accu_finished       <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                         
                                         //if (in_m_axis_tvalid && (in_m_axis_tkeep==8'b1111_1111))
@@ -196,8 +196,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         in_m_axis_tready    <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                     end
                         
@@ -207,8 +207,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         cnt                 <= cnt;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                         
                                         if (cnt==accu_length)
@@ -236,8 +236,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                                 sum                 <= sum;
                                                 out_s_axis_tvalid   <= 1;
                                                 out_s_axis_tdata    <= sum;
-                                                //out_s_axis_tkeep    <= 8'b1111_1111;
-                                                //out_s_axis_tlast    <= 1;
+                                                out_s_axis_tkeep    <= 8'b1111_1111;
+                                                out_s_axis_tlast    <= 1;
                                                 step                <= 5;
                                             end
                                             else begin
@@ -246,8 +246,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                                 sum                 <= sum;
                                                 out_s_axis_tvalid   <= 0;
                                                 out_s_axis_tdata    <= 0;
-                                                //out_s_axis_tkeep    <= 0;
-                                                //out_s_axis_tlast    <= 0;
+                                                out_s_axis_tkeep    <= 0;
+                                                out_s_axis_tlast    <= 0;
                                                 step                <= 4;
                                             end 
                                     end
@@ -261,8 +261,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         in_m_axis_tready    <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                     end
                                     
@@ -281,8 +281,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         in_m_axis_tready    <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                     end
                                     
@@ -301,8 +301,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                         in_m_axis_tready    <= 0;
                                         out_s_axis_tvalid   <= 0;
                                         out_s_axis_tdata    <= 0;
-                                        //out_s_axis_tkeep    <= 0;
-                                        //out_s_axis_tlast    <= 0;
+                                        out_s_axis_tkeep    <= 0;
+                                        out_s_axis_tlast    <= 0;
                                         accu_length         <= accu_length;
                                     end
                                     
@@ -315,8 +315,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                                             in_m_axis_tready    <= 0;
                                             out_s_axis_tvalid   <= 0;
                                             out_s_axis_tdata    <= 0;
-                                            //out_s_axis_tkeep    <= 0;
-                                            //out_s_axis_tlast    <= 0;
+                                            out_s_axis_tkeep    <= 0;
+                                            out_s_axis_tlast    <= 0;
                                             accu_length         <= 0;
                                         end
                                         
@@ -332,8 +332,8 @@ always @(posedge sys_clk or negedge sys_rst_n)
                         out_s_axis_tvalid   <= 0;
                         out_s_axis_tdata    <= 0;
                         accu_length         <= 0;
-                        //out_s_axis_tkeep    <= 0;
-                        //out_s_axis_tlast    <= 0;
+                        out_s_axis_tkeep    <= 0;
+                        out_s_axis_tlast    <= 0;
                     end
             end 
     end 

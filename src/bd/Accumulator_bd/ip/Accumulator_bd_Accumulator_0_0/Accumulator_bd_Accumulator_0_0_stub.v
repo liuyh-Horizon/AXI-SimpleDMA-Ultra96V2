@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Mon Aug 29 16:25:12 2022
+// Date        : Mon Aug 29 17:19:17 2022
 // Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_stub.v

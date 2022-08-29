@@ -1808,7 +1808,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_MM2S.MAX_BURST_LENGTH">8</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_MM2S.MAX_BURST_LENGTH">256</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2233,7 +2233,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>MAX_BURST_LENGTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_S2MM.MAX_BURST_LENGTH">8</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXI_S2MM.MAX_BURST_LENGTH">256</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -5068,7 +5068,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dd73c8bb</spirit:value>
+            <spirit:value>9:4188a82d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5082,11 +5082,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 26 18:40:57 UTC 2022</spirit:value>
+            <spirit:value>Mon Aug 29 16:53:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dd73c8bb</spirit:value>
+            <spirit:value>9:4188a82d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5102,11 +5102,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 26 18:40:57 UTC 2022</spirit:value>
+            <spirit:value>Mon Aug 29 16:53:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dd73c8bb</spirit:value>
+            <spirit:value>9:4188a82d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5147,7 +5147,7 @@ Note: This value must be greater than or equal to the largest expected packet to
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d85317b9</spirit:value>
+            <spirit:value>9:3c6cfec0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5163,11 +5163,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 26 18:40:57 UTC 2022</spirit:value>
+            <spirit:value>Mon Aug 29 16:53:57 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d85317b9</spirit:value>
+            <spirit:value>9:3c6cfec0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -5181,11 +5181,11 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 29 12:51:44 UTC 2022</spirit:value>
+            <spirit:value>Mon Aug 29 16:56:42 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:dd73c8bb</spirit:value>
+            <spirit:value>9:4188a82d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -7847,7 +7847,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_MM2S_BURST_SIZE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MM2S_BURST_SIZE" spirit:choiceRef="choice_list_884121e1">8</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MM2S_BURST_SIZE" spirit:choiceRef="choice_list_884121e1">256</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -7891,7 +7891,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_INCLUDE_MM2S_DRE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_MM2S_DRE" spirit:choiceRef="choice_list_8af5a703">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_MM2S_DRE" spirit:choiceRef="choice_list_8af5a703">1</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -7917,7 +7917,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_S2MM_BURST_SIZE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S2MM_BURST_SIZE" spirit:choiceRef="choice_list_884121e1">8</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S2MM_BURST_SIZE" spirit:choiceRef="choice_list_884121e1">256</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -7961,7 +7961,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_INCLUDE_S2MM_DRE</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_S2MM_DRE" spirit:choiceRef="choice_list_8af5a703">0</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_INCLUDE_S2MM_DRE" spirit:choiceRef="choice_list_8af5a703">1</spirit:value>
         <spirit:vendorExtensions>
           <xilinx:parameterInfo>
             <xilinx:enablement>
@@ -8354,16 +8354,22 @@ Note: This value must be greater than or equal to the largest expected packet to
     <spirit:fileSet>
       <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
       <spirit:file>
+        <spirit:name>Accumulator_bd_axi_dma_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>Accumulator_bd_axi_dma_0_0_stub.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>Accumulator_bd_axi_dma_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:name>Accumulator_bd_axi_dma_0_0_stub.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
@@ -8374,16 +8380,10 @@ Note: This value must be greater than or equal to the largest expected packet to
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>Accumulator_bd_axi_dma_0_0_stub.vhdl</spirit:name>
+        <spirit:name>Accumulator_bd_axi_dma_0_0_sim_netlist.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>Accumulator_bd_axi_dma_0_0.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -8560,7 +8560,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       <spirit:name>c_include_mm2s_dre</spirit:name>
       <spirit:displayName>Allow Unaligned Transfers</spirit:displayName>
       <spirit:description>Select this only when the addressing on Memory Mapped Side could be unaligned. Enabling this feature increases the resource count.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_include_mm2s_dre" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="2200" spirit:configGroups="1 NoDisplay">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_include_mm2s_dre" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="2200" spirit:configGroups="1 NoDisplay">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -8585,7 +8585,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       <spirit:name>c_mm2s_burst_size</spirit:name>
       <spirit:displayName>Max Burst Size</spirit:displayName>
       <spirit:description>This sets the Max Burst Length for the AXI4 Memory Mapped transaction.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_mm2s_burst_size" spirit:choiceRef="choice_list_425e29a6" spirit:order="2300" spirit:configGroups="1 NoDisplay">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_mm2s_burst_size" spirit:choiceRef="choice_list_425e29a6" spirit:order="2300" spirit:configGroups="1 NoDisplay">256</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -8650,7 +8650,7 @@ Note: This value must be greater than or equal to the largest expected packet to
       <spirit:name>c_include_s2mm_dre</spirit:name>
       <spirit:displayName>Allow Unaligned Transfers</spirit:displayName>
       <spirit:description>Select this only when the addressing on Memory Mapped Side could be unaligned. Enabling this feature increases the resource count.</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_include_s2mm_dre" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="2900" spirit:configGroups="1 NoDisplay">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_include_s2mm_dre" spirit:choiceRef="choice_pairs_ce1226b1" spirit:order="2900" spirit:configGroups="1 NoDisplay">1</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -8674,7 +8674,7 @@ Note: This value must be greater than or equal to the largest expected packet to
     <spirit:parameter>
       <spirit:name>c_s2mm_burst_size</spirit:name>
       <spirit:displayName>Max Burst Size</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_s2mm_burst_size" spirit:choiceRef="choice_list_425e29a6" spirit:order="3000" spirit:configGroups="1 NoDisplay">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.c_s2mm_burst_size" spirit:choiceRef="choice_list_425e29a6" spirit:order="3000" spirit:configGroups="1 NoDisplay">256</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -8936,6 +8936,8 @@ Note: This value must be greater than or equal to the largest expected packet to
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE_ACLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE_ACLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI_LITE_ACLK.PHASE" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_include_mm2s_dre" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_include_s2mm_dre" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_include_sg" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_m_axi_mm2s_data_width" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_m_axi_s2mm_data_width" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>
@@ -8945,7 +8947,7 @@ Note: This value must be greater than or equal to the largest expected packet to
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_s2mm_burst_size" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_s_axis_s2mm_tdata_width" xilinx:valueSource="user" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_sg_include_stscntrl_strm" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_single_interface" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.c_single_interface" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

@@ -43,13 +43,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_gpio_0_3 || ORIG_REF_NAME==Accumulator_bd_axi_gpio_0_3} -quiet] -quiet
 
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_gpio_3_0 || ORIG_REF_NAME==Accumulator_bd_axi_gpio_3_0} -quiet] -quiet
+
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_ds_0 || ORIG_REF_NAME==Accumulator_bd_auto_ds_0} -quiet] -quiet
 
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_pc_0 || ORIG_REF_NAME==Accumulator_bd_auto_pc_0} -quiet] -quiet
-
-# IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_gpio_3_0 || ORIG_REF_NAME==Accumulator_bd_axi_gpio_3_0} -quiet] -quiet
 
 # XDC: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/Accumulator_bd_ooc.xdc
