@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: /usr/software/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ef76b6acf39c4196a08b73569349ee55 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axis_infrastructure_v1_1_0 -L axis_data_fifo_v2_0_4 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Accumulator_tb_behav xil_defaultlib.Accumulator_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /home/yuhaoliu/Tools/Hardware/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto ef76b6acf39c4196a08b73569349ee55 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axis_infrastructure_v1_1_0 -L axis_data_fifo_v2_0_4 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Accumulator_tb_behav xil_defaultlib.Accumulator_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer

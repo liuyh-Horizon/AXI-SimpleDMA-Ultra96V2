@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
 // Date        : Fri Aug 26 20:46:48 2022
 // Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top Accumulator_bd_axi_gpio_0_1 -prefix
+//               Accumulator_bd_axi_gpio_0_1_ Accumulator_bd_axi_gpio_0_1_stub.v
 // Design      : Accumulator_bd_axi_gpio_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu3eg-sbva484-1-i

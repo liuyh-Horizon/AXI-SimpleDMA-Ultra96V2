@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Fri Aug 26 20:46:49 2022
+// Date        : Fri Aug 26 20:46:48 2022
 // Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top Accumulator_bd_axi_gpio_0_1 -prefix
+//               Accumulator_bd_axi_gpio_0_1_ Accumulator_bd_axi_gpio_0_1_sim_netlist.v
 // Design      : Accumulator_bd_axi_gpio_0_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -133,7 +133,6 @@ module Accumulator_bd_axi_gpio_0_1
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "GPIO_Core" *) 
 module Accumulator_bd_axi_gpio_0_1_GPIO_Core
    (gpio_io_o,
     ip2bus_wrack_i,
@@ -263,7 +262,6 @@ module Accumulator_bd_axi_gpio_0_1_GPIO_Core
         .O(ip2bus_wrack_i));
 endmodule
 
-(* ORIG_REF_NAME = "address_decoder" *) 
 module Accumulator_bd_axi_gpio_0_1_address_decoder
    (\GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg ,
@@ -464,7 +462,7 @@ endmodule
 (* C_FAMILY = "zynquplus" *) (* C_GPIO2_WIDTH = "32" *) (* C_GPIO_WIDTH = "1" *) 
 (* C_INTERRUPT_PRESENT = "0" *) (* C_IS_DUAL = "0" *) (* C_S_AXI_ADDR_WIDTH = "9" *) 
 (* C_S_AXI_DATA_WIDTH = "32" *) (* C_TRI_DEFAULT = "-1" *) (* C_TRI_DEFAULT_2 = "-1" *) 
-(* ORIG_REF_NAME = "axi_gpio" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
+(* downgradeipidentifiedwarnings = "yes" *) (* ip_group = "LOGICORE" *) 
 module Accumulator_bd_axi_gpio_0_1_axi_gpio
    (s_axi_aclk,
     s_axi_aresetn,
@@ -727,7 +725,6 @@ module Accumulator_bd_axi_gpio_0_1_axi_gpio
         .R(\I_SLAVE_ATTACHMENT/rst ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_lite_ipif" *) 
 module Accumulator_bd_axi_gpio_0_1_axi_lite_ipif
    (rst,
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,
@@ -847,7 +844,6 @@ module Accumulator_bd_axi_gpio_0_1_axi_lite_ipif
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "pselect_f" *) 
 module Accumulator_bd_axi_gpio_0_1_pselect_f
    (ce_expnd_i_3,
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0] );
@@ -883,7 +879,6 @@ module Accumulator_bd_axi_gpio_0_1_pselect_f__parameterized1
         .O(ce_expnd_i_1));
 endmodule
 
-(* ORIG_REF_NAME = "slave_attachment" *) 
 module Accumulator_bd_axi_gpio_0_1_slave_attachment
    (SS,
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg ,

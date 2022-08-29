@@ -59,6 +59,9 @@ module Accumulator_bd_Accumulator_0_0 (
   sys_rst_n,
   accu_en,
   accu_finished,
+  step_debug,
+  accu_length_debug,
+  sum_debug,
   s_axis_aresetn,
   s_axis_aclk,
   s_axis_tvalid,
@@ -83,6 +86,9 @@ input wire sys_clk;
 input wire sys_rst_n;
 input wire accu_en;
 output wire accu_finished;
+output wire [7 : 0] step_debug;
+output wire [31 : 0] accu_length_debug;
+output wire [31 : 0] sum_debug;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 s_axis_aresetn RST" *)
 input wire s_axis_aresetn;
@@ -123,6 +129,9 @@ output wire m_axis_tlast;
     .sys_rst_n(sys_rst_n),
     .accu_en(accu_en),
     .accu_finished(accu_finished),
+    .step_debug(step_debug),
+    .accu_length_debug(accu_length_debug),
+    .sum_debug(sum_debug),
     .s_axis_aresetn(s_axis_aresetn),
     .s_axis_aclk(s_axis_aclk),
     .s_axis_tvalid(s_axis_tvalid),

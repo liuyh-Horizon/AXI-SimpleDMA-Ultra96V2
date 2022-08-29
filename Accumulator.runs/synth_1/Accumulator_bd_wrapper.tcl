@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.runs/synth_1/Accumulator_bd_wrapper.tcl"
+  variable script "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.runs/synth_1/Accumulator_bd_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 6
+set_param chipscope.maxJobs 1
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu3eg-sbva484-1-i
@@ -79,61 +79,70 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.cache/wt [current_project]
-set_property parent.project_path /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.xpr [current_project]
+set_property webtalk.parent_dir /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.cache/wt [current_project]
+set_property parent.project_path /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/home/yuhao_liu/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part_repo_paths {/home/yuhaoliu/.Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part avnet.com:ultra96v2:part0:1.2 [current_project]
-set_property ip_output_repo /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.cache/ip [current_project]
+set_property ip_output_repo /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/hdl/Accumulator_bd_wrapper.v
-add_files /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/Accumulator_bd.bd
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_2/bd_a1b1_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_3/bd_a1b1_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_4/bd_a1b1_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_5/bd_a1b1_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_6/bd_a1b1_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_10/bd_a1b1_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_11/bd_a1b1_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_12/bd_a1b1_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_16/bd_a1b1_s01a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_17/bd_a1b1_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_18/bd_a1b1_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_19/bd_a1b1_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_20/bd_a1b1_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_21/bd_a1b1_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_22/bd_a1b1_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_23/bd_a1b1_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_24/bd_a1b1_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_25/bd_a1b1_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/src/bd/Accumulator_bd/Accumulator_bd_ooc.xdc]
+read_verilog -library xil_defaultlib /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/hdl/Accumulator_bd_wrapper.v
+add_files /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/Accumulator_bd.bd
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_zynq_ultra_ps_e_0_0/Accumulator_bd_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_dma_0_0/Accumulator_bd_axi_dma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_0/Accumulator_bd_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_1/Accumulator_bd_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_rst_ps8_0_100M_0/Accumulator_bd_rst_ps8_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_xbar_0/Accumulator_bd_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_1/bd_a1b1_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_2/bd_a1b1_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_3/bd_a1b1_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_4/bd_a1b1_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_5/bd_a1b1_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_6/bd_a1b1_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_10/bd_a1b1_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_11/bd_a1b1_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_12/bd_a1b1_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_16/bd_a1b1_s01a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_17/bd_a1b1_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_18/bd_a1b1_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_19/bd_a1b1_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_20/bd_a1b1_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_21/bd_a1b1_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_22/bd_a1b1_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_23/bd_a1b1_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_24/bd_a1b1_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_25/bd_a1b1_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3.xdc]
+set_property used_in_synthesis false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_pc_0/Accumulator_bd_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0.xdc]
+set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/Accumulator_bd_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
