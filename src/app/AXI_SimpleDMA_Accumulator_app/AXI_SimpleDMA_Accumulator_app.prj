@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AXI_SimpleDMA_Accumulator_app" location="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app" platform="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/AXI_SimpleDMA_Accumulator_Platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="AXI_SimpleDMA_Accumulator_app_system" sysConfig="AXI_SimpleDMA_Accumulator_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="376ecaa525b6902c2525da1ade5a8ba8">
-  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.380905314">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AXI_SimpleDMA_Accumulator_app" location="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app" platform="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/AXI_SimpleDMA_Accumulator_Platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="AXI_SimpleDMA_Accumulator_app_system" sysConfig="AXI_SimpleDMA_Accumulator_Platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="7216a57c0e1de7ba05d46db9aa1ac634">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.511920087">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1023866807" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.2100539610" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="hello_world"/>

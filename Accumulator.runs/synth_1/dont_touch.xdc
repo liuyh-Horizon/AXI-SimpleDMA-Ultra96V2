@@ -31,12 +31,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/Accumulator_bd_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_smc_0 || ORIG_REF_NAME==Accumulator_bd_axi_smc_0} -quiet] -quiet
 
-# IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_Accumulator_0_0 || ORIG_REF_NAME==Accumulator_bd_Accumulator_0_0} -quiet] -quiet
-
-# IP: ip/axis_data_fifo_0/axis_data_fifo_0.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_data_fifo_0 || ORIG_REF_NAME==axis_data_fifo_0} -quiet] -quiet
-
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_gpio_0_2 || ORIG_REF_NAME==Accumulator_bd_axi_gpio_0_2} -quiet] -quiet
 
@@ -45,6 +39,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator
 
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_axi_gpio_3_0 || ORIG_REF_NAME==Accumulator_bd_axi_gpio_3_0} -quiet] -quiet
+
+# IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_Accumulator_0_0 || ORIG_REF_NAME==Accumulator_bd_Accumulator_0_0} -quiet] -quiet
+
+# IP: ip/axis_data_fifo_0/axis_data_fifo_0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==axis_data_fifo_0 || ORIG_REF_NAME==axis_data_fifo_0} -quiet] -quiet
 
 # IP: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Accumulator_bd_auto_ds_0 || ORIG_REF_NAME==Accumulator_bd_auto_ds_0} -quiet] -quiet

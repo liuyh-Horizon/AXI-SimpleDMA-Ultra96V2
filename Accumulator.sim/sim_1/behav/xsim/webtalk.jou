@@ -2,11 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug 29 01:43:39 2022
-# Process ID: 23581
-# Current directory: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/webtalk.jou
+# Start of session at: Tue Sep  6 16:37:25 2022
+# Process ID: 72830
+# Current directory: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/yuhao_liu/Projects/Hardware/FPGA/Ultra96V2/AXI-SimpleDMA/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/Accumulator.sim/sim_1/behav/xsim/xsim.dir/Accumulator_tb_behav/webtalk/xsim_webtalk.tcl -notrace

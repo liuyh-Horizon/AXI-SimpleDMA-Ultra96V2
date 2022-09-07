@@ -22,8 +22,6 @@ idle_hooks.o: idle_hooks.c zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/microblaze_sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xusbpsu_endpoint.h \
- zynqmp_pmufw_bsp/psu_pmu_0/include/xdpdma_hw.h \
- zynqmp_pmufw_bsp/psu_pmu_0/include/xdppsu_hw.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xzdma_hw.h pm_common.h pmu_local.h \
  xpfw_default.h xpfw_config.h xpfw_util.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xil_types.h \
@@ -85,10 +83,6 @@ zynqmp_pmufw_bsp/psu_pmu_0/include/microblaze_sleep.h:
 zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xusbpsu_endpoint.h:
-
-zynqmp_pmufw_bsp/psu_pmu_0/include/xdpdma_hw.h:
-
-zynqmp_pmufw_bsp/psu_pmu_0/include/xdppsu_hw.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xzdma_hw.h:
 

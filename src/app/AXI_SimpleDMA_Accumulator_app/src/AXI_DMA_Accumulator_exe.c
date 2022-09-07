@@ -56,11 +56,12 @@
 
 u32 checkHalted(u32 baseAddress,u32 offset);
 
+const int MAX_REPEAT_NUM = 10;
 int64_t in[11] = {10, 0, -10, -20, -30, -40, -50, -60, -70, -80, -90};
+int64_t out[10];
 
 int main()
 {
-	const int MAX_REPEAT_NUM = 1;
     init_platform();
 
     u32 DMA_status;
@@ -74,8 +75,8 @@ int main()
     XAxiDma_Config *DMA_Config;
     XAxiDma DMA;
 
-	int64_t out[MAX_REPEAT_NUM];
 	for(int i=0; i<MAX_REPEAT_NUM; i++) out[i]=0;
+	Xil_DCacheFlushRange((UINTPTR)in, 11*sizeof(int64_t));
 	Xil_DCacheFlushRange((UINTPTR)out, MAX_REPEAT_NUM*sizeof(int64_t));
 
 	GPIO_Config = XGpio_LookupConfig(XPAR_AXI_GPIO_0_DEVICE_ID);
@@ -105,7 +106,7 @@ int main()
     DMA_status = XAxiDma_CfgInitialize(&DMA, DMA_Config);
     if (DMA_status!=XST_SUCCESS)
     {
-    	print("DMS initial failed.\n\r");
+    	print("DMA initial failed.\n\r");
         cleanup_platform();
         return -1;
     }
@@ -119,9 +120,6 @@ int main()
 
         for (int i=0; i<MAX_REPEAT_NUM; i++)
         {
-
-    		Xil_DCacheFlushRange((UINTPTR)in, 11*sizeof(int64_t));
-    		Xil_DCacheInvalidateRange((UINTPTR)out[i], sizeof(int64_t));
 
         	Accu_finised = XGpio_DiscreteRead(&Accu_finished_IO, 1);
             while(Accu_finised != 1)
@@ -151,6 +149,11 @@ int main()
 
             	print("DMA transfer initial success.\n");
 
+            	XAxiDma_IntrDisable(&DMA, XAXIDMA_IRQ_ALL_MASK,
+            						XAXIDMA_DEVICE_TO_DMA);
+            	XAxiDma_IntrDisable(&DMA, XAXIDMA_IRQ_ALL_MASK,
+            						XAXIDMA_DMA_TO_DEVICE);
+
             	/*DMA_status = checkHalted(XPAR_AXI_DMA_0_BASEADDR,0x4);
                 while(DMA_status != 1)
                 {
@@ -177,7 +180,7 @@ int main()
                 {
                 	Accu_finised = XGpio_DiscreteRead(&Accu_finished_IO, 1);
                 }
-                DMA_status = XAxiDma_SimpleTransfer(&DMA, (UINTPTR)out[i], sizeof(int64_t), XAXIDMA_DEVICE_TO_DMA);
+                //DMA_status = XAxiDma_SimpleTransfer(&DMA, (UINTPTR)out[i], sizeof(int64_t), XAXIDMA_DEVICE_TO_DMA);
 
             	DMA_status = checkHalted(XPAR_AXI_DMA_0_BASEADDR,0x4);
             	xil_printf("DMA status: %0d\n", DMA_status);
@@ -190,18 +193,26 @@ int main()
             	sum_debug = XGpio_DiscreteRead(&sum_debug_IO, 1);
             	xil_printf("Sum result: %0d\n", sum_debug);
             	print("Accu finished. \n\r");
-            	DMA_status = checkHalted(XPAR_AXI_DMA_0_BASEADDR,0x4);
-            	xil_printf("From PS to PL DMA status: %0x\n", DMA_status);
-            	DMA_status = checkHalted(XPAR_AXI_DMA_0_BASEADDR,0x34);
-            	xil_printf("From PL to PS DMA status: %0x\n", DMA_status);
 
             	XGpio_DiscreteWrite(&Accu_en_IO, 1, 0);
             }
         }
 
-    	print("Total Accu computing finished. \n");
-    	//Xil_DCacheFlushRange((UINTPTR)out, MAX_REPEAT_NUM*sizeof(int64_t));
-    	for(int i=0; i<MAX_REPEAT_NUM; i++) xil_printf("Sum: %0d. \n",out[i]);
+		print("Total Accu computing finished. \n");
+		xil_printf("Size: %0d. \n",sizeof(int64_t));
+		sleep(10);
+		DMA_status = XAxiDma_SimpleTransfer(&DMA, (UINTPTR)out, MAX_REPEAT_NUM*sizeof(int64_t), XAXIDMA_DEVICE_TO_DMA);
+
+		/*while ((XAxiDma_Busy(&DMA, XAXIDMA_DEVICE_TO_DMA)) ||
+					(XAxiDma_Busy(&DMA, XAXIDMA_DMA_TO_DEVICE))) {
+						print("DMA Busy. \n");
+				}
+		*/
+		Xil_DCacheInvalidateRange((UINTPTR)out, MAX_REPEAT_NUM*sizeof(int64_t));
+    	for(int i=0; i<MAX_REPEAT_NUM; i++)
+    	{
+			xil_printf("Sum: %0d. \n",out[i]);
+    	}
         cleanup_platform();
         return 0;
     }

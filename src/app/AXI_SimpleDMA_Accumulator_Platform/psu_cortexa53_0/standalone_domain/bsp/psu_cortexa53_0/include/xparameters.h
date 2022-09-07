@@ -64,7 +64,7 @@
 #define XPAR_AXI_DMA_0_S2MM_BURST_SIZE 256
 #define XPAR_AXI_DMA_0_MICRO_DMA 0
 #define XPAR_AXI_DMA_0_ADDR_WIDTH 32
-#define XPAR_AXI_DMA_0_SG_LENGTH_WIDTH 14
+#define XPAR_AXI_DMA_0_SG_LENGTH_WIDTH 26
 
 
 /******************************************************************/
@@ -87,7 +87,7 @@
 #define XPAR_AXIDMA_0_S2MM_BURST_SIZE 256
 #define XPAR_AXIDMA_0_MICRO_DMA 0
 #define XPAR_AXIDMA_0_c_addr_width 32
-#define XPAR_AXIDMA_0_c_sg_length_width 14
+#define XPAR_AXIDMA_0_c_sg_length_width 26
 
 
 /******************************************************************/
@@ -358,45 +358,6 @@
 #define XPAR_DDRCPSU_0_DDR_MAX_OPERATING_TEMPARATURE 1
 #define XPAR_DDRCPSU_0_DDR_FINE_GRANULARITY_REFRESH_MODE 0
 #define XPAR_DDRCPSU_0_DDR_SELF_REFRESH_ABORT 0
-/* Definitions for driver DPDMA */
-#define XPAR_XDPDMA_NUM_INSTANCES 1
-
-/* Definitions for peripheral PSU_DPDMA */
-#define XPAR_PSU_DPDMA_DEVICE_ID 0
-#define XPAR_PSU_DPDMA_BASEADDR 0xFD4C0000
-#define XPAR_PSU_DPDMA_HIGHADDR 0xFD4CFFFF
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral PSU_DPDMA */
-#define XPAR_XDPDMA_0_DEVICE_ID XPAR_PSU_DPDMA_DEVICE_ID
-#define XPAR_XDPDMA_0_BASEADDR 0xFD4C0000
-#define XPAR_XDPDMA_0_HIGHADDR 0xFD4CFFFF
-
-
-/******************************************************************/
-
-#define XPAR_PSU_DP_LANE_COUNT 2
-/* Definitions for driver DPPSU */
-#define XPAR_XDPPSU_NUM_INSTANCES 1
-
-/* Definitions for peripheral PSU_DP */
-#define XPAR_PSU_DP_DEVICE_ID 0
-#define XPAR_PSU_DP_BASEADDR 0xFD4A0000
-#define XPAR_PSU_DP_HIGHADDR 0xFD4AFFFF
-
-
-/******************************************************************/
-
-/* Canonical definitions for peripheral PSU_DP */
-#define XPAR_XDPPSU_0_DEVICE_ID XPAR_PSU_DP_DEVICE_ID
-#define XPAR_XDPPSU_0_BASEADDR 0xFD4A0000
-#define XPAR_XDPPSU_0_HIGHADDR 0xFD4AFFFF
-
-
-/******************************************************************/
-
 
 /* Definitions for peripheral PSU_AFI_0 */
 #define XPAR_PSU_AFI_0_S_AXI_BASEADDR 0xFD360000

@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
--- Date        : Mon Aug 29 17:19:17 2022
+-- Date        : Wed Sep  7 15:28:27 2022
 -- Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ Accumulator_bd_Accumulator_0_0_sim_netlist.vhdl
@@ -3458,6 +3458,18 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_base is
   signal \<const0>\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_52\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_53\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_54\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_55\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_56\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_57\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_58\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_59\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_60\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_61\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_62\ : STD_LOGIC;
+  signal \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_63\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_0_CASOUTDBITERR_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_0_CASOUTSBITERR_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_0_DBITERR_UNCONNECTED\ : STD_LOGIC;
@@ -3560,7 +3572,7 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_xpm_memory_b
   attribute \MEM.PORTB.DATA_BIT_LAYOUT\ of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is "p0_d12";
   attribute \MEM.PORTB.DATA_LSB\ of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is 72;
   attribute \MEM.PORTB.DATA_MSB\ of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is 83;
-  attribute METHODOLOGY_DRC_VIOS of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is "";
+  attribute METHODOLOGY_DRC_VIOS of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is "{SYNTH-6 {cell *THIS*}}";
   attribute RDADDR_COLLISION_HWCONFIG of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is "DELAYED_WRITE";
   attribute RTL_RAM_BITS of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is 86016;
   attribute RTL_RAM_NAME of \gen_wr_a.gen_word_narrow.mem_reg_bram_2\ : label is "gen_wr_a.gen_word_narrow.mem";
@@ -3662,6 +3674,138 @@ begin
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][72]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_63\,
+      Q => doutb(72),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][73]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_62\,
+      Q => doutb(73),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][74]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_61\,
+      Q => doutb(74),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][75]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_60\,
+      Q => doutb(75),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][76]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_59\,
+      Q => doutb(76),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][77]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_58\,
+      Q => doutb(77),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][78]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_57\,
+      Q => doutb(78),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][79]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_56\,
+      Q => doutb(79),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][80]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_55\,
+      Q => doutb(80),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][81]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_54\,
+      Q => doutb(81),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][82]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_53\,
+      Q => doutb(82),
+      R => rstb
+    );
+\gen_rd_b.gen_doutb_pipe.doutb_pipe_reg[0][83]\: unisim.vcomponents.FDRE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => clka,
+      CE => regceb,
+      D => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_52\,
+      Q => doutb(83),
+      R => rstb
     );
 \gen_wr_a.gen_word_narrow.mem_reg_bram_0\: unisim.vcomponents.RAMB36E2
     generic map(
@@ -4139,7 +4283,7 @@ GND: unisim.vcomponents.GND
       CASCADE_ORDER_B => "NONE",
       CLOCK_DOMAINS => "COMMON",
       DOA_REG => 0,
-      DOB_REG => 1,
+      DOB_REG => 0,
       ENADDRENA => "FALSE",
       ENADDRENB => "FALSE",
       INITP_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -4266,17 +4410,28 @@ GND: unisim.vcomponents.GND
       DINPBDINP(1 downto 0) => B"00",
       DOUTADOUT(15 downto 0) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_2_DOUTADOUT_UNCONNECTED\(15 downto 0),
       DOUTBDOUT(15 downto 12) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_2_DOUTBDOUT_UNCONNECTED\(15 downto 12),
-      DOUTBDOUT(11 downto 0) => doutb(83 downto 72),
+      DOUTBDOUT(11) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_52\,
+      DOUTBDOUT(10) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_53\,
+      DOUTBDOUT(9) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_54\,
+      DOUTBDOUT(8) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_55\,
+      DOUTBDOUT(7) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_56\,
+      DOUTBDOUT(6) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_57\,
+      DOUTBDOUT(5) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_58\,
+      DOUTBDOUT(4) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_59\,
+      DOUTBDOUT(3) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_60\,
+      DOUTBDOUT(2) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_61\,
+      DOUTBDOUT(1) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_62\,
+      DOUTBDOUT(0) => \gen_wr_a.gen_word_narrow.mem_reg_bram_2_n_63\,
       DOUTPADOUTP(1 downto 0) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_2_DOUTPADOUTP_UNCONNECTED\(1 downto 0),
       DOUTPBDOUTP(1 downto 0) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_bram_2_DOUTPBDOUTP_UNCONNECTED\(1 downto 0),
       ENARDEN => '1',
       ENBWREN => enb,
       REGCEAREGCE => '1',
-      REGCEB => regceb,
+      REGCEB => '1',
       RSTRAMARSTRAM => '0',
       RSTRAMB => '0',
       RSTREGARSTREG => '0',
-      RSTREGB => rstb,
+      RSTREGB => '0',
       SLEEP => '0',
       WEA(1) => wea(0),
       WEA(0) => wea(0),
@@ -7466,13 +7621,10 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0_4_top is
     s_axis_tready : out STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tlast : out STD_LOGIC;
     s_axis_aresetn : in STD_LOGIC;
     s_axis_aclk : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tready : in STD_LOGIC
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0_4_top;
@@ -7506,8 +7658,10 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fi
   signal \gen_fifo.xpm_fifo_axis_inst_n_97\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_98\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_99\ : STD_LOGIC;
+  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tlast_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute AXIS_DATA_WIDTH : integer;
@@ -7602,8 +7756,8 @@ begin
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
       m_axis_tdest(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\(0),
       m_axis_tid(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\(0),
-      m_axis_tkeep(7 downto 0) => m_axis_tkeep(7 downto 0),
-      m_axis_tlast => m_axis_tlast,
+      m_axis_tkeep(7 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\(7 downto 0),
+      m_axis_tlast => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tlast_UNCONNECTED\,
       m_axis_tready => m_axis_tready,
       m_axis_tstrb(7 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\(7 downto 0),
       m_axis_tuser(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED\(0),
@@ -7626,15 +7780,8 @@ begin
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
       s_axis_tdest(0) => '0',
       s_axis_tid(0) => '0',
-      s_axis_tkeep(7) => s_axis_tkeep(0),
-      s_axis_tkeep(6) => s_axis_tkeep(0),
-      s_axis_tkeep(5) => s_axis_tkeep(0),
-      s_axis_tkeep(4) => s_axis_tkeep(0),
-      s_axis_tkeep(3) => s_axis_tkeep(0),
-      s_axis_tkeep(2) => s_axis_tkeep(0),
-      s_axis_tkeep(1) => s_axis_tkeep(0),
-      s_axis_tkeep(0) => s_axis_tkeep(0),
-      s_axis_tlast => s_axis_tvalid,
+      s_axis_tkeep(7 downto 0) => B"00000000",
+      s_axis_tlast => '0',
       s_axis_tready => s_axis_tready,
       s_axis_tstrb(7 downto 0) => B"00000000",
       s_axis_tuser(0) => '0',
@@ -7666,8 +7813,6 @@ entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0_4_top__xdc
     s_axis_aclk : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
     m_axis_tready : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -7689,15 +7834,6 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_f
   signal \gen_fifo.xpm_fifo_axis_inst_n_111\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_112\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_113\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_74\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_75\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_76\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_77\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_78\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_79\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_80\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_81\ : STD_LOGIC;
-  signal \gen_fifo.xpm_fifo_axis_inst_n_82\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_86\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_87\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_88\ : STD_LOGIC;
@@ -7712,8 +7848,10 @@ architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_f
   signal \gen_fifo.xpm_fifo_axis_inst_n_97\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_98\ : STD_LOGIC;
   signal \gen_fifo.xpm_fifo_axis_inst_n_99\ : STD_LOGIC;
+  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tlast_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute AXIS_DATA_WIDTH : integer;
@@ -7808,15 +7946,8 @@ begin
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
       m_axis_tdest(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\(0),
       m_axis_tid(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\(0),
-      m_axis_tkeep(7) => \gen_fifo.xpm_fifo_axis_inst_n_74\,
-      m_axis_tkeep(6) => \gen_fifo.xpm_fifo_axis_inst_n_75\,
-      m_axis_tkeep(5) => \gen_fifo.xpm_fifo_axis_inst_n_76\,
-      m_axis_tkeep(4) => \gen_fifo.xpm_fifo_axis_inst_n_77\,
-      m_axis_tkeep(3) => \gen_fifo.xpm_fifo_axis_inst_n_78\,
-      m_axis_tkeep(2) => \gen_fifo.xpm_fifo_axis_inst_n_79\,
-      m_axis_tkeep(1) => \gen_fifo.xpm_fifo_axis_inst_n_80\,
-      m_axis_tkeep(0) => \gen_fifo.xpm_fifo_axis_inst_n_81\,
-      m_axis_tlast => \gen_fifo.xpm_fifo_axis_inst_n_82\,
+      m_axis_tkeep(7 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\(7 downto 0),
+      m_axis_tlast => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tlast_UNCONNECTED\,
       m_axis_tready => m_axis_tready,
       m_axis_tstrb(7 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\(7 downto 0),
       m_axis_tuser(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tuser_UNCONNECTED\(0),
@@ -7839,8 +7970,8 @@ begin
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
       s_axis_tdest(0) => '0',
       s_axis_tid(0) => '0',
-      s_axis_tkeep(7 downto 0) => s_axis_tkeep(7 downto 0),
-      s_axis_tlast => s_axis_tlast,
+      s_axis_tkeep(7 downto 0) => B"00000000",
+      s_axis_tlast => '0',
       s_axis_tready => s_axis_tready,
       s_axis_tstrb(7 downto 0) => B"00000000",
       s_axis_tuser(0) => '0',
@@ -7870,13 +8001,9 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0 is
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tlast : out STD_LOGIC
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0 : entity is "axis_data_fifo_0,axis_data_fifo_v2_0_4_top,{}";
@@ -7888,35 +8015,28 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0 is
   attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 M_AXIS TLAST";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of m_axis_tlast : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 M_AXIS TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 M_AXIS TVALID";
   attribute X_INTERFACE_INFO of s_axis_aclk : signal is "xilinx.com:signal:clock:1.0 S_CLKIF CLK";
+  attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of s_axis_aclk : signal is "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_aresetn : signal is "xilinx.com:signal:reset:1.0 S_RSTIF RST";
   attribute X_INTERFACE_PARAMETER of s_axis_aresetn : signal is "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s_axis_tlast : signal is "xilinx.com:interface:axis:1.0 S_AXIS TLAST";
-  attribute X_INTERFACE_PARAMETER of s_axis_tlast : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tready : signal is "xilinx.com:interface:axis:1.0 S_AXIS TREADY";
   attribute X_INTERFACE_INFO of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 S_AXIS TVALID";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 M_AXIS TDATA";
-  attribute X_INTERFACE_INFO of m_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 M_AXIS TKEEP";
+  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDATA";
-  attribute X_INTERFACE_INFO of s_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS TKEEP";
+  attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
 inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0_4_top
      port map (
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
-      m_axis_tkeep(7 downto 0) => m_axis_tkeep(7 downto 0),
-      m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
       m_axis_tvalid => m_axis_tvalid,
       s_axis_aclk => s_axis_aclk,
       s_axis_aresetn => s_axis_aresetn,
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
-      s_axis_tkeep(0) => s_axis_tkeep(7),
       s_axis_tready => s_axis_tready,
       s_axis_tvalid => s_axis_tvalid
     );
@@ -7932,13 +8052,9 @@ entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\ i
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tlast : out STD_LOGIC
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\ : entity is "axis_data_fifo_0,axis_data_fifo_v2_0_4_top,{}";
@@ -7951,39 +8067,21 @@ entity \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\ i
 end \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\;
 
 architecture STRUCTURE of \decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\ is
-  signal \<const0>\ : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 M_AXIS TLAST";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of m_axis_tlast : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 M_AXIS TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 M_AXIS TVALID";
   attribute X_INTERFACE_INFO of s_axis_aclk : signal is "xilinx.com:signal:clock:1.0 S_CLKIF CLK";
+  attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of s_axis_aclk : signal is "XIL_INTERFACENAME S_CLKIF, ASSOCIATED_BUSIF S_AXIS, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_aresetn : signal is "xilinx.com:signal:reset:1.0 S_RSTIF RST";
   attribute X_INTERFACE_PARAMETER of s_axis_aresetn : signal is "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s_axis_tlast : signal is "xilinx.com:interface:axis:1.0 S_AXIS TLAST";
-  attribute X_INTERFACE_PARAMETER of s_axis_tlast : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tready : signal is "xilinx.com:interface:axis:1.0 S_AXIS TREADY";
   attribute X_INTERFACE_INFO of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 S_AXIS TVALID";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 M_AXIS TDATA";
-  attribute X_INTERFACE_INFO of m_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 M_AXIS TKEEP";
+  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDATA";
-  attribute X_INTERFACE_INFO of s_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS TKEEP";
+  attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
-  m_axis_tkeep(7) <= \<const0>\;
-  m_axis_tkeep(6) <= \<const0>\;
-  m_axis_tkeep(5) <= \<const0>\;
-  m_axis_tkeep(4) <= \<const0>\;
-  m_axis_tkeep(3) <= \<const0>\;
-  m_axis_tkeep(2) <= \<const0>\;
-  m_axis_tkeep(1) <= \<const0>\;
-  m_axis_tkeep(0) <= \<const0>\;
-  m_axis_tlast <= \<const0>\;
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0_4_top__xdcDup__1\
      port map (
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
@@ -7992,8 +8090,6 @@ inst: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_v2_0
       s_axis_aclk => s_axis_aclk,
       s_axis_aresetn => s_axis_aresetn,
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
-      s_axis_tkeep(7 downto 0) => s_axis_tkeep(7 downto 0),
-      s_axis_tlast => s_axis_tlast,
       s_axis_tready => s_axis_tready,
       s_axis_tvalid => s_axis_tvalid
     );
@@ -8016,15 +8112,11 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator is
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
     m_axis_aresetn : in STD_LOGIC;
     m_axis_aclk : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tlast : out STD_LOGIC
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 )
   );
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator;
 
@@ -8169,11 +8261,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator 
   signal in_m_axis_tready1_out : STD_LOGIC;
   signal in_m_axis_tvalid : STD_LOGIC;
   signal out_s_axis_tdata : STD_LOGIC_VECTOR ( 63 downto 0 );
-  signal out_s_axis_tkeep : STD_LOGIC_VECTOR ( 7 to 7 );
-  signal \out_s_axis_tkeep[7]_i_1_n_0\ : STD_LOGIC;
-  signal out_s_axis_tlast : STD_LOGIC;
   signal out_s_axis_tready : STD_LOGIC;
   signal out_s_axis_tvalid : STD_LOGIC;
+  signal out_s_axis_tvalid2_out : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal p_1_in : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal rst : STD_LOGIC;
@@ -8490,142 +8580,140 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator 
   signal \sum_reg[7]_i_2_n_9\ : STD_LOGIC;
   signal \NLW_cnt_reg[63]_i_3_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 6 );
   signal \NLW_cnt_reg[63]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 to 7 );
-  signal NLW_input_fifo_m_axis_tlast_UNCONNECTED : STD_LOGIC;
-  signal NLW_input_fifo_m_axis_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_step_reg[2]_i_10_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_step_reg[2]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 6 );
   signal \NLW_step_reg[2]_i_2_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_step_reg[2]_i_3_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal \NLW_sum_reg[63]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 7 to 7 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \accu_length[0]_i_1\ : label is "soft_lutpair93";
-  attribute SOFT_HLUTNM of \accu_length[10]_i_1\ : label is "soft_lutpair113";
-  attribute SOFT_HLUTNM of \accu_length[11]_i_1\ : label is "soft_lutpair99";
-  attribute SOFT_HLUTNM of \accu_length[12]_i_1\ : label is "soft_lutpair118";
-  attribute SOFT_HLUTNM of \accu_length[13]_i_1\ : label is "soft_lutpair100";
-  attribute SOFT_HLUTNM of \accu_length[14]_i_1\ : label is "soft_lutpair121";
-  attribute SOFT_HLUTNM of \accu_length[15]_i_1\ : label is "soft_lutpair94";
-  attribute SOFT_HLUTNM of \accu_length[16]_i_1\ : label is "soft_lutpair95";
-  attribute SOFT_HLUTNM of \accu_length[17]_i_1\ : label is "soft_lutpair122";
-  attribute SOFT_HLUTNM of \accu_length[18]_i_1\ : label is "soft_lutpair95";
-  attribute SOFT_HLUTNM of \accu_length[19]_i_1\ : label is "soft_lutpair118";
-  attribute SOFT_HLUTNM of \accu_length[1]_i_1\ : label is "soft_lutpair123";
-  attribute SOFT_HLUTNM of \accu_length[20]_i_1\ : label is "soft_lutpair100";
-  attribute SOFT_HLUTNM of \accu_length[21]_i_1\ : label is "soft_lutpair114";
-  attribute SOFT_HLUTNM of \accu_length[22]_i_1\ : label is "soft_lutpair101";
-  attribute SOFT_HLUTNM of \accu_length[23]_i_1\ : label is "soft_lutpair111";
-  attribute SOFT_HLUTNM of \accu_length[24]_i_1\ : label is "soft_lutpair111";
-  attribute SOFT_HLUTNM of \accu_length[25]_i_1\ : label is "soft_lutpair106";
-  attribute SOFT_HLUTNM of \accu_length[26]_i_1\ : label is "soft_lutpair116";
-  attribute SOFT_HLUTNM of \accu_length[27]_i_1\ : label is "soft_lutpair101";
-  attribute SOFT_HLUTNM of \accu_length[28]_i_1\ : label is "soft_lutpair120";
-  attribute SOFT_HLUTNM of \accu_length[29]_i_1\ : label is "soft_lutpair96";
-  attribute SOFT_HLUTNM of \accu_length[2]_i_1\ : label is "soft_lutpair93";
-  attribute SOFT_HLUTNM of \accu_length[30]_i_1\ : label is "soft_lutpair124";
-  attribute SOFT_HLUTNM of \accu_length[31]_i_2\ : label is "soft_lutpair102";
-  attribute SOFT_HLUTNM of \accu_length[32]_i_1\ : label is "soft_lutpair106";
-  attribute SOFT_HLUTNM of \accu_length[33]_i_1\ : label is "soft_lutpair109";
-  attribute SOFT_HLUTNM of \accu_length[34]_i_1\ : label is "soft_lutpair110";
-  attribute SOFT_HLUTNM of \accu_length[35]_i_1\ : label is "soft_lutpair107";
-  attribute SOFT_HLUTNM of \accu_length[36]_i_1\ : label is "soft_lutpair96";
-  attribute SOFT_HLUTNM of \accu_length[37]_i_1\ : label is "soft_lutpair124";
-  attribute SOFT_HLUTNM of \accu_length[38]_i_1\ : label is "soft_lutpair97";
-  attribute SOFT_HLUTNM of \accu_length[39]_i_1\ : label is "soft_lutpair121";
-  attribute SOFT_HLUTNM of \accu_length[3]_i_1\ : label is "soft_lutpair120";
-  attribute SOFT_HLUTNM of \accu_length[40]_i_1\ : label is "soft_lutpair97";
-  attribute SOFT_HLUTNM of \accu_length[41]_i_1\ : label is "soft_lutpair117";
-  attribute SOFT_HLUTNM of \accu_length[42]_i_1\ : label is "soft_lutpair107";
-  attribute SOFT_HLUTNM of \accu_length[43]_i_1\ : label is "soft_lutpair114";
-  attribute SOFT_HLUTNM of \accu_length[44]_i_1\ : label is "soft_lutpair110";
-  attribute SOFT_HLUTNM of \accu_length[45]_i_1\ : label is "soft_lutpair108";
-  attribute SOFT_HLUTNM of \accu_length[46]_i_1\ : label is "soft_lutpair115";
-  attribute SOFT_HLUTNM of \accu_length[47]_i_1\ : label is "soft_lutpair102";
-  attribute SOFT_HLUTNM of \accu_length[48]_i_1\ : label is "soft_lutpair119";
-  attribute SOFT_HLUTNM of \accu_length[49]_i_1\ : label is "soft_lutpair103";
-  attribute SOFT_HLUTNM of \accu_length[4]_i_1\ : label is "soft_lutpair94";
-  attribute SOFT_HLUTNM of \accu_length[50]_i_1\ : label is "soft_lutpair122";
-  attribute SOFT_HLUTNM of \accu_length[51]_i_1\ : label is "soft_lutpair98";
-  attribute SOFT_HLUTNM of \accu_length[52]_i_1\ : label is "soft_lutpair98";
-  attribute SOFT_HLUTNM of \accu_length[53]_i_1\ : label is "soft_lutpair123";
-  attribute SOFT_HLUTNM of \accu_length[54]_i_1\ : label is "soft_lutpair99";
-  attribute SOFT_HLUTNM of \accu_length[55]_i_1\ : label is "soft_lutpair119";
-  attribute SOFT_HLUTNM of \accu_length[56]_i_1\ : label is "soft_lutpair103";
-  attribute SOFT_HLUTNM of \accu_length[57]_i_1\ : label is "soft_lutpair115";
-  attribute SOFT_HLUTNM of \accu_length[58]_i_1\ : label is "soft_lutpair104";
-  attribute SOFT_HLUTNM of \accu_length[59]_i_1\ : label is "soft_lutpair112";
-  attribute SOFT_HLUTNM of \accu_length[5]_i_1\ : label is "soft_lutpair116";
-  attribute SOFT_HLUTNM of \accu_length[60]_i_1\ : label is "soft_lutpair112";
-  attribute SOFT_HLUTNM of \accu_length[61]_i_1\ : label is "soft_lutpair108";
-  attribute SOFT_HLUTNM of \accu_length[62]_i_1\ : label is "soft_lutpair117";
-  attribute SOFT_HLUTNM of \accu_length[63]_i_1\ : label is "soft_lutpair104";
-  attribute SOFT_HLUTNM of \accu_length[6]_i_1\ : label is "soft_lutpair105";
-  attribute SOFT_HLUTNM of \accu_length[7]_i_1\ : label is "soft_lutpair113";
-  attribute SOFT_HLUTNM of \accu_length[8]_i_1\ : label is "soft_lutpair109";
-  attribute SOFT_HLUTNM of \accu_length[9]_i_1\ : label is "soft_lutpair105";
-  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \cnt[10]_i_1\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \cnt[11]_i_1\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \cnt[12]_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \cnt[13]_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \cnt[14]_i_1\ : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of \cnt[15]_i_1\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \cnt[16]_i_1\ : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of \cnt[17]_i_1\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \cnt[18]_i_1\ : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \cnt[19]_i_1\ : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \cnt[20]_i_1\ : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of \cnt[21]_i_1\ : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of \cnt[22]_i_1\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \cnt[23]_i_1\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \cnt[24]_i_1\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \cnt[25]_i_1\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \cnt[26]_i_1\ : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of \cnt[27]_i_1\ : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of \cnt[28]_i_1\ : label is "soft_lutpair46";
-  attribute SOFT_HLUTNM of \cnt[29]_i_1\ : label is "soft_lutpair46";
-  attribute SOFT_HLUTNM of \cnt[2]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \cnt[30]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \cnt[31]_i_1\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \cnt[32]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \cnt[33]_i_1\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \cnt[34]_i_1\ : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \cnt[35]_i_1\ : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \cnt[36]_i_1\ : label is "soft_lutpair42";
-  attribute SOFT_HLUTNM of \cnt[37]_i_1\ : label is "soft_lutpair42";
-  attribute SOFT_HLUTNM of \cnt[38]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \cnt[39]_i_1\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \cnt[3]_i_1\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \cnt[40]_i_1\ : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \cnt[41]_i_1\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \cnt[42]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \cnt[43]_i_1\ : label is "soft_lutpair40";
-  attribute SOFT_HLUTNM of \cnt[44]_i_1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \cnt[45]_i_1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \cnt[46]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \cnt[47]_i_1\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \cnt[48]_i_1\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \cnt[49]_i_1\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \cnt[4]_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \cnt[50]_i_1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \cnt[51]_i_1\ : label is "soft_lutpair36";
-  attribute SOFT_HLUTNM of \cnt[52]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \cnt[53]_i_1\ : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of \cnt[54]_i_1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \cnt[55]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \cnt[56]_i_1\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \cnt[57]_i_1\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \cnt[58]_i_1\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \cnt[59]_i_1\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \cnt[5]_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \cnt[60]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \cnt[61]_i_1\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \cnt[62]_i_1\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \cnt[63]_i_2\ : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of \cnt[6]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \cnt[7]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \cnt[8]_i_1\ : label is "soft_lutpair56";
-  attribute SOFT_HLUTNM of \cnt[9]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \accu_length[0]_i_1\ : label is "soft_lutpair92";
+  attribute SOFT_HLUTNM of \accu_length[10]_i_1\ : label is "soft_lutpair112";
+  attribute SOFT_HLUTNM of \accu_length[11]_i_1\ : label is "soft_lutpair98";
+  attribute SOFT_HLUTNM of \accu_length[12]_i_1\ : label is "soft_lutpair117";
+  attribute SOFT_HLUTNM of \accu_length[13]_i_1\ : label is "soft_lutpair99";
+  attribute SOFT_HLUTNM of \accu_length[14]_i_1\ : label is "soft_lutpair120";
+  attribute SOFT_HLUTNM of \accu_length[15]_i_1\ : label is "soft_lutpair93";
+  attribute SOFT_HLUTNM of \accu_length[16]_i_1\ : label is "soft_lutpair94";
+  attribute SOFT_HLUTNM of \accu_length[17]_i_1\ : label is "soft_lutpair121";
+  attribute SOFT_HLUTNM of \accu_length[18]_i_1\ : label is "soft_lutpair94";
+  attribute SOFT_HLUTNM of \accu_length[19]_i_1\ : label is "soft_lutpair117";
+  attribute SOFT_HLUTNM of \accu_length[1]_i_1\ : label is "soft_lutpair122";
+  attribute SOFT_HLUTNM of \accu_length[20]_i_1\ : label is "soft_lutpair99";
+  attribute SOFT_HLUTNM of \accu_length[21]_i_1\ : label is "soft_lutpair113";
+  attribute SOFT_HLUTNM of \accu_length[22]_i_1\ : label is "soft_lutpair100";
+  attribute SOFT_HLUTNM of \accu_length[23]_i_1\ : label is "soft_lutpair110";
+  attribute SOFT_HLUTNM of \accu_length[24]_i_1\ : label is "soft_lutpair110";
+  attribute SOFT_HLUTNM of \accu_length[25]_i_1\ : label is "soft_lutpair105";
+  attribute SOFT_HLUTNM of \accu_length[26]_i_1\ : label is "soft_lutpair115";
+  attribute SOFT_HLUTNM of \accu_length[27]_i_1\ : label is "soft_lutpair100";
+  attribute SOFT_HLUTNM of \accu_length[28]_i_1\ : label is "soft_lutpair119";
+  attribute SOFT_HLUTNM of \accu_length[29]_i_1\ : label is "soft_lutpair95";
+  attribute SOFT_HLUTNM of \accu_length[2]_i_1\ : label is "soft_lutpair92";
+  attribute SOFT_HLUTNM of \accu_length[30]_i_1\ : label is "soft_lutpair123";
+  attribute SOFT_HLUTNM of \accu_length[31]_i_2\ : label is "soft_lutpair101";
+  attribute SOFT_HLUTNM of \accu_length[32]_i_1\ : label is "soft_lutpair105";
+  attribute SOFT_HLUTNM of \accu_length[33]_i_1\ : label is "soft_lutpair108";
+  attribute SOFT_HLUTNM of \accu_length[34]_i_1\ : label is "soft_lutpair109";
+  attribute SOFT_HLUTNM of \accu_length[35]_i_1\ : label is "soft_lutpair106";
+  attribute SOFT_HLUTNM of \accu_length[36]_i_1\ : label is "soft_lutpair95";
+  attribute SOFT_HLUTNM of \accu_length[37]_i_1\ : label is "soft_lutpair123";
+  attribute SOFT_HLUTNM of \accu_length[38]_i_1\ : label is "soft_lutpair96";
+  attribute SOFT_HLUTNM of \accu_length[39]_i_1\ : label is "soft_lutpair120";
+  attribute SOFT_HLUTNM of \accu_length[3]_i_1\ : label is "soft_lutpair119";
+  attribute SOFT_HLUTNM of \accu_length[40]_i_1\ : label is "soft_lutpair96";
+  attribute SOFT_HLUTNM of \accu_length[41]_i_1\ : label is "soft_lutpair116";
+  attribute SOFT_HLUTNM of \accu_length[42]_i_1\ : label is "soft_lutpair106";
+  attribute SOFT_HLUTNM of \accu_length[43]_i_1\ : label is "soft_lutpair113";
+  attribute SOFT_HLUTNM of \accu_length[44]_i_1\ : label is "soft_lutpair109";
+  attribute SOFT_HLUTNM of \accu_length[45]_i_1\ : label is "soft_lutpair107";
+  attribute SOFT_HLUTNM of \accu_length[46]_i_1\ : label is "soft_lutpair114";
+  attribute SOFT_HLUTNM of \accu_length[47]_i_1\ : label is "soft_lutpair101";
+  attribute SOFT_HLUTNM of \accu_length[48]_i_1\ : label is "soft_lutpair118";
+  attribute SOFT_HLUTNM of \accu_length[49]_i_1\ : label is "soft_lutpair102";
+  attribute SOFT_HLUTNM of \accu_length[4]_i_1\ : label is "soft_lutpair93";
+  attribute SOFT_HLUTNM of \accu_length[50]_i_1\ : label is "soft_lutpair121";
+  attribute SOFT_HLUTNM of \accu_length[51]_i_1\ : label is "soft_lutpair97";
+  attribute SOFT_HLUTNM of \accu_length[52]_i_1\ : label is "soft_lutpair97";
+  attribute SOFT_HLUTNM of \accu_length[53]_i_1\ : label is "soft_lutpair122";
+  attribute SOFT_HLUTNM of \accu_length[54]_i_1\ : label is "soft_lutpair98";
+  attribute SOFT_HLUTNM of \accu_length[55]_i_1\ : label is "soft_lutpair118";
+  attribute SOFT_HLUTNM of \accu_length[56]_i_1\ : label is "soft_lutpair102";
+  attribute SOFT_HLUTNM of \accu_length[57]_i_1\ : label is "soft_lutpair114";
+  attribute SOFT_HLUTNM of \accu_length[58]_i_1\ : label is "soft_lutpair103";
+  attribute SOFT_HLUTNM of \accu_length[59]_i_1\ : label is "soft_lutpair111";
+  attribute SOFT_HLUTNM of \accu_length[5]_i_1\ : label is "soft_lutpair115";
+  attribute SOFT_HLUTNM of \accu_length[60]_i_1\ : label is "soft_lutpair111";
+  attribute SOFT_HLUTNM of \accu_length[61]_i_1\ : label is "soft_lutpair107";
+  attribute SOFT_HLUTNM of \accu_length[62]_i_1\ : label is "soft_lutpair116";
+  attribute SOFT_HLUTNM of \accu_length[63]_i_1\ : label is "soft_lutpair103";
+  attribute SOFT_HLUTNM of \accu_length[6]_i_1\ : label is "soft_lutpair104";
+  attribute SOFT_HLUTNM of \accu_length[7]_i_1\ : label is "soft_lutpair112";
+  attribute SOFT_HLUTNM of \accu_length[8]_i_1\ : label is "soft_lutpair108";
+  attribute SOFT_HLUTNM of \accu_length[9]_i_1\ : label is "soft_lutpair104";
+  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \cnt[10]_i_1\ : label is "soft_lutpair54";
+  attribute SOFT_HLUTNM of \cnt[11]_i_1\ : label is "soft_lutpair54";
+  attribute SOFT_HLUTNM of \cnt[12]_i_1\ : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of \cnt[13]_i_1\ : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of \cnt[14]_i_1\ : label is "soft_lutpair50";
+  attribute SOFT_HLUTNM of \cnt[15]_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \cnt[16]_i_1\ : label is "soft_lutpair50";
+  attribute SOFT_HLUTNM of \cnt[17]_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \cnt[18]_i_1\ : label is "soft_lutpair51";
+  attribute SOFT_HLUTNM of \cnt[19]_i_1\ : label is "soft_lutpair51";
+  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \cnt[20]_i_1\ : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of \cnt[21]_i_1\ : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of \cnt[22]_i_1\ : label is "soft_lutpair46";
+  attribute SOFT_HLUTNM of \cnt[23]_i_1\ : label is "soft_lutpair48";
+  attribute SOFT_HLUTNM of \cnt[24]_i_1\ : label is "soft_lutpair46";
+  attribute SOFT_HLUTNM of \cnt[25]_i_1\ : label is "soft_lutpair48";
+  attribute SOFT_HLUTNM of \cnt[26]_i_1\ : label is "soft_lutpair47";
+  attribute SOFT_HLUTNM of \cnt[27]_i_1\ : label is "soft_lutpair47";
+  attribute SOFT_HLUTNM of \cnt[28]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \cnt[29]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \cnt[2]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \cnt[30]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \cnt[31]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \cnt[32]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \cnt[33]_i_1\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \cnt[34]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \cnt[35]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \cnt[36]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \cnt[37]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \cnt[38]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \cnt[39]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \cnt[3]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \cnt[40]_i_1\ : label is "soft_lutpair38";
+  attribute SOFT_HLUTNM of \cnt[41]_i_1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \cnt[42]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \cnt[43]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \cnt[44]_i_1\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \cnt[45]_i_1\ : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \cnt[46]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \cnt[47]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \cnt[48]_i_1\ : label is "soft_lutpair34";
+  attribute SOFT_HLUTNM of \cnt[49]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \cnt[4]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \cnt[50]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \cnt[51]_i_1\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \cnt[52]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \cnt[53]_i_1\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \cnt[54]_i_1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \cnt[55]_i_1\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \cnt[56]_i_1\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \cnt[57]_i_1\ : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of \cnt[58]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \cnt[59]_i_1\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \cnt[5]_i_1\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \cnt[60]_i_1\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \cnt[61]_i_1\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \cnt[62]_i_1\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \cnt[63]_i_2\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \cnt[6]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \cnt[7]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \cnt[8]_i_1\ : label is "soft_lutpair55";
+  attribute SOFT_HLUTNM of \cnt[9]_i_1\ : label is "soft_lutpair55";
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \cnt_reg[16]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \cnt_reg[24]_i_2\ : label is 35;
@@ -8642,78 +8730,76 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator 
   attribute DowngradeIPIdentifiedWarnings of input_fifo : label is "yes";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of input_fifo : label is "axis_data_fifo_v2_0_4_top,Vivado 2020.2";
-  attribute SOFT_HLUTNM of \out_s_axis_tkeep[7]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of out_s_axis_tvalid_i_1 : label is "soft_lutpair28";
   attribute CHECK_LICENSE_TYPE of output_fifo : label is "axis_data_fifo_0,axis_data_fifo_v2_0_4_top,{}";
   attribute DowngradeIPIdentifiedWarnings of output_fifo : label is "yes";
   attribute X_CORE_INFO of output_fifo : label is "axis_data_fifo_v2_0_4_top,Vivado 2020.2";
   attribute SOFT_HLUTNM of rst_i_1 : label is "soft_lutpair26";
   attribute SOFT_HLUTNM of \step[1]_i_1\ : label is "soft_lutpair27";
   attribute SOFT_HLUTNM of \step[2]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of \sum[0]_i_1\ : label is "soft_lutpair92";
-  attribute SOFT_HLUTNM of \sum[10]_i_1\ : label is "soft_lutpair88";
-  attribute SOFT_HLUTNM of \sum[11]_i_1\ : label is "soft_lutpair87";
-  attribute SOFT_HLUTNM of \sum[12]_i_1\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \sum[13]_i_1\ : label is "soft_lutpair84";
-  attribute SOFT_HLUTNM of \sum[14]_i_1\ : label is "soft_lutpair85";
-  attribute SOFT_HLUTNM of \sum[15]_i_1\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \sum[16]_i_1\ : label is "soft_lutpair86";
-  attribute SOFT_HLUTNM of \sum[17]_i_1\ : label is "soft_lutpair84";
-  attribute SOFT_HLUTNM of \sum[18]_i_1\ : label is "soft_lutpair85";
-  attribute SOFT_HLUTNM of \sum[19]_i_1\ : label is "soft_lutpair83";
-  attribute SOFT_HLUTNM of \sum[1]_i_1\ : label is "soft_lutpair92";
-  attribute SOFT_HLUTNM of \sum[20]_i_1\ : label is "soft_lutpair82";
-  attribute SOFT_HLUTNM of \sum[21]_i_1\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \sum[22]_i_1\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \sum[23]_i_1\ : label is "soft_lutpair79";
-  attribute SOFT_HLUTNM of \sum[24]_i_1\ : label is "soft_lutpair82";
-  attribute SOFT_HLUTNM of \sum[25]_i_1\ : label is "soft_lutpair80";
-  attribute SOFT_HLUTNM of \sum[26]_i_1\ : label is "soft_lutpair81";
-  attribute SOFT_HLUTNM of \sum[27]_i_1\ : label is "soft_lutpair79";
-  attribute SOFT_HLUTNM of \sum[28]_i_1\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \sum[29]_i_1\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \sum[2]_i_1\ : label is "soft_lutpair91";
-  attribute SOFT_HLUTNM of \sum[30]_i_1\ : label is "soft_lutpair77";
-  attribute SOFT_HLUTNM of \sum[31]_i_2\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \sum[32]_i_1\ : label is "soft_lutpair78";
-  attribute SOFT_HLUTNM of \sum[33]_i_1\ : label is "soft_lutpair76";
-  attribute SOFT_HLUTNM of \sum[34]_i_1\ : label is "soft_lutpair77";
-  attribute SOFT_HLUTNM of \sum[35]_i_1\ : label is "soft_lutpair75";
-  attribute SOFT_HLUTNM of \sum[36]_i_1\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \sum[37]_i_1\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \sum[38]_i_1\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \sum[39]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \sum[3]_i_1\ : label is "soft_lutpair91";
-  attribute SOFT_HLUTNM of \sum[40]_i_1\ : label is "soft_lutpair74";
-  attribute SOFT_HLUTNM of \sum[41]_i_1\ : label is "soft_lutpair72";
-  attribute SOFT_HLUTNM of \sum[42]_i_1\ : label is "soft_lutpair73";
-  attribute SOFT_HLUTNM of \sum[43]_i_1\ : label is "soft_lutpair71";
-  attribute SOFT_HLUTNM of \sum[44]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \sum[45]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \sum[46]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \sum[47]_i_1\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \sum[48]_i_1\ : label is "soft_lutpair70";
-  attribute SOFT_HLUTNM of \sum[49]_i_1\ : label is "soft_lutpair68";
-  attribute SOFT_HLUTNM of \sum[4]_i_1\ : label is "soft_lutpair90";
-  attribute SOFT_HLUTNM of \sum[50]_i_1\ : label is "soft_lutpair69";
-  attribute SOFT_HLUTNM of \sum[51]_i_1\ : label is "soft_lutpair67";
-  attribute SOFT_HLUTNM of \sum[52]_i_1\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \sum[53]_i_1\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \sum[54]_i_1\ : label is "soft_lutpair65";
-  attribute SOFT_HLUTNM of \sum[55]_i_1\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \sum[56]_i_1\ : label is "soft_lutpair66";
-  attribute SOFT_HLUTNM of \sum[57]_i_1\ : label is "soft_lutpair64";
-  attribute SOFT_HLUTNM of \sum[58]_i_1\ : label is "soft_lutpair65";
-  attribute SOFT_HLUTNM of \sum[59]_i_1\ : label is "soft_lutpair63";
-  attribute SOFT_HLUTNM of \sum[5]_i_1\ : label is "soft_lutpair89";
-  attribute SOFT_HLUTNM of \sum[60]_i_1\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \sum[61]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \sum[62]_i_1\ : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \sum[63]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \sum[6]_i_1\ : label is "soft_lutpair90";
-  attribute SOFT_HLUTNM of \sum[7]_i_1\ : label is "soft_lutpair89";
-  attribute SOFT_HLUTNM of \sum[8]_i_1\ : label is "soft_lutpair88";
-  attribute SOFT_HLUTNM of \sum[9]_i_1\ : label is "soft_lutpair87";
+  attribute SOFT_HLUTNM of \sum[0]_i_1\ : label is "soft_lutpair91";
+  attribute SOFT_HLUTNM of \sum[10]_i_1\ : label is "soft_lutpair87";
+  attribute SOFT_HLUTNM of \sum[11]_i_1\ : label is "soft_lutpair86";
+  attribute SOFT_HLUTNM of \sum[12]_i_1\ : label is "soft_lutpair85";
+  attribute SOFT_HLUTNM of \sum[13]_i_1\ : label is "soft_lutpair83";
+  attribute SOFT_HLUTNM of \sum[14]_i_1\ : label is "soft_lutpair84";
+  attribute SOFT_HLUTNM of \sum[15]_i_1\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \sum[16]_i_1\ : label is "soft_lutpair85";
+  attribute SOFT_HLUTNM of \sum[17]_i_1\ : label is "soft_lutpair83";
+  attribute SOFT_HLUTNM of \sum[18]_i_1\ : label is "soft_lutpair84";
+  attribute SOFT_HLUTNM of \sum[19]_i_1\ : label is "soft_lutpair82";
+  attribute SOFT_HLUTNM of \sum[1]_i_1\ : label is "soft_lutpair91";
+  attribute SOFT_HLUTNM of \sum[20]_i_1\ : label is "soft_lutpair81";
+  attribute SOFT_HLUTNM of \sum[21]_i_1\ : label is "soft_lutpair79";
+  attribute SOFT_HLUTNM of \sum[22]_i_1\ : label is "soft_lutpair80";
+  attribute SOFT_HLUTNM of \sum[23]_i_1\ : label is "soft_lutpair78";
+  attribute SOFT_HLUTNM of \sum[24]_i_1\ : label is "soft_lutpair81";
+  attribute SOFT_HLUTNM of \sum[25]_i_1\ : label is "soft_lutpair79";
+  attribute SOFT_HLUTNM of \sum[26]_i_1\ : label is "soft_lutpair80";
+  attribute SOFT_HLUTNM of \sum[27]_i_1\ : label is "soft_lutpair78";
+  attribute SOFT_HLUTNM of \sum[28]_i_1\ : label is "soft_lutpair77";
+  attribute SOFT_HLUTNM of \sum[29]_i_1\ : label is "soft_lutpair75";
+  attribute SOFT_HLUTNM of \sum[2]_i_1\ : label is "soft_lutpair90";
+  attribute SOFT_HLUTNM of \sum[30]_i_1\ : label is "soft_lutpair76";
+  attribute SOFT_HLUTNM of \sum[31]_i_2\ : label is "soft_lutpair74";
+  attribute SOFT_HLUTNM of \sum[32]_i_1\ : label is "soft_lutpair77";
+  attribute SOFT_HLUTNM of \sum[33]_i_1\ : label is "soft_lutpair75";
+  attribute SOFT_HLUTNM of \sum[34]_i_1\ : label is "soft_lutpair76";
+  attribute SOFT_HLUTNM of \sum[35]_i_1\ : label is "soft_lutpair74";
+  attribute SOFT_HLUTNM of \sum[36]_i_1\ : label is "soft_lutpair73";
+  attribute SOFT_HLUTNM of \sum[37]_i_1\ : label is "soft_lutpair71";
+  attribute SOFT_HLUTNM of \sum[38]_i_1\ : label is "soft_lutpair72";
+  attribute SOFT_HLUTNM of \sum[39]_i_1\ : label is "soft_lutpair70";
+  attribute SOFT_HLUTNM of \sum[3]_i_1\ : label is "soft_lutpair90";
+  attribute SOFT_HLUTNM of \sum[40]_i_1\ : label is "soft_lutpair73";
+  attribute SOFT_HLUTNM of \sum[41]_i_1\ : label is "soft_lutpair71";
+  attribute SOFT_HLUTNM of \sum[42]_i_1\ : label is "soft_lutpair72";
+  attribute SOFT_HLUTNM of \sum[43]_i_1\ : label is "soft_lutpair70";
+  attribute SOFT_HLUTNM of \sum[44]_i_1\ : label is "soft_lutpair69";
+  attribute SOFT_HLUTNM of \sum[45]_i_1\ : label is "soft_lutpair67";
+  attribute SOFT_HLUTNM of \sum[46]_i_1\ : label is "soft_lutpair68";
+  attribute SOFT_HLUTNM of \sum[47]_i_1\ : label is "soft_lutpair66";
+  attribute SOFT_HLUTNM of \sum[48]_i_1\ : label is "soft_lutpair69";
+  attribute SOFT_HLUTNM of \sum[49]_i_1\ : label is "soft_lutpair67";
+  attribute SOFT_HLUTNM of \sum[4]_i_1\ : label is "soft_lutpair89";
+  attribute SOFT_HLUTNM of \sum[50]_i_1\ : label is "soft_lutpair68";
+  attribute SOFT_HLUTNM of \sum[51]_i_1\ : label is "soft_lutpair66";
+  attribute SOFT_HLUTNM of \sum[52]_i_1\ : label is "soft_lutpair65";
+  attribute SOFT_HLUTNM of \sum[53]_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \sum[54]_i_1\ : label is "soft_lutpair64";
+  attribute SOFT_HLUTNM of \sum[55]_i_1\ : label is "soft_lutpair62";
+  attribute SOFT_HLUTNM of \sum[56]_i_1\ : label is "soft_lutpair65";
+  attribute SOFT_HLUTNM of \sum[57]_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \sum[58]_i_1\ : label is "soft_lutpair64";
+  attribute SOFT_HLUTNM of \sum[59]_i_1\ : label is "soft_lutpair62";
+  attribute SOFT_HLUTNM of \sum[5]_i_1\ : label is "soft_lutpair88";
+  attribute SOFT_HLUTNM of \sum[60]_i_1\ : label is "soft_lutpair61";
+  attribute SOFT_HLUTNM of \sum[61]_i_1\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \sum[62]_i_1\ : label is "soft_lutpair61";
+  attribute SOFT_HLUTNM of \sum[63]_i_1\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \sum[6]_i_1\ : label is "soft_lutpair89";
+  attribute SOFT_HLUTNM of \sum[7]_i_1\ : label is "soft_lutpair88";
+  attribute SOFT_HLUTNM of \sum[8]_i_1\ : label is "soft_lutpair87";
+  attribute SOFT_HLUTNM of \sum[9]_i_1\ : label is "soft_lutpair86";
   attribute ADDER_THRESHOLD of \sum_reg[15]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \sum_reg[23]_i_2\ : label is 35;
   attribute ADDER_THRESHOLD of \sum_reg[31]_i_3\ : label is 35;
@@ -11307,15 +11393,11 @@ in_m_axis_tready_reg: unisim.vcomponents.FDCE
 input_fifo: entity work.\decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0__xdcDup__1\
      port map (
       m_axis_tdata(63 downto 0) => in_m_axis_tdata(63 downto 0),
-      m_axis_tkeep(7 downto 0) => NLW_input_fifo_m_axis_tkeep_UNCONNECTED(7 downto 0),
-      m_axis_tlast => NLW_input_fifo_m_axis_tlast_UNCONNECTED,
       m_axis_tready => in_m_axis_tready,
       m_axis_tvalid => in_m_axis_tvalid,
       s_axis_aclk => s_axis_aclk,
       s_axis_aresetn => s_axis_aresetn0,
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
-      s_axis_tkeep(7 downto 0) => s_axis_tkeep(7 downto 0),
-      s_axis_tlast => s_axis_tlast,
       s_axis_tready => \^s_axis_tready\,
       s_axis_tvalid => s_axis_tvalid
     );
@@ -12672,26 +12754,6 @@ input_fifo_i_1: unisim.vcomponents.LUT2
       D => p_0_in(9),
       Q => out_s_axis_tdata(9)
     );
-\out_s_axis_tkeep[7]_i_1\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"02000000"
-    )
-        port map (
-      I0 => accu_en,
-      I1 => \^step_debug\(1),
-      I2 => \^step_debug\(0),
-      I3 => \^step_debug\(2),
-      I4 => out_s_axis_tready,
-      O => \out_s_axis_tkeep[7]_i_1_n_0\
-    );
-\out_s_axis_tkeep_reg[7]\: unisim.vcomponents.FDCE
-     port map (
-      C => sys_clk,
-      CE => '1',
-      CLR => accu_finished_i_2_n_0,
-      D => \out_s_axis_tkeep[7]_i_1_n_0\,
-      Q => out_s_axis_tkeep(7)
-    );
 out_s_axis_tvalid_i_1: unisim.vcomponents.LUT5
     generic map(
       INIT => X"00000080"
@@ -12702,31 +12764,26 @@ out_s_axis_tvalid_i_1: unisim.vcomponents.LUT5
       I2 => out_s_axis_tready,
       I3 => \^step_debug\(1),
       I4 => \^step_debug\(0),
-      O => out_s_axis_tvalid
+      O => out_s_axis_tvalid2_out
     );
 out_s_axis_tvalid_reg: unisim.vcomponents.FDCE
      port map (
       C => sys_clk,
       CE => '1',
       CLR => accu_finished_i_2_n_0,
-      D => out_s_axis_tvalid,
-      Q => out_s_axis_tlast
+      D => out_s_axis_tvalid2_out,
+      Q => out_s_axis_tvalid
     );
 output_fifo: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_axis_data_fifo_0
      port map (
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
-      m_axis_tkeep(7 downto 0) => m_axis_tkeep(7 downto 0),
-      m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
       m_axis_tvalid => m_axis_tvalid,
       s_axis_aclk => m_axis_aclk,
       s_axis_aresetn => m_axis_aresetn,
       s_axis_tdata(63 downto 0) => out_s_axis_tdata(63 downto 0),
-      s_axis_tkeep(7) => out_s_axis_tkeep(7),
-      s_axis_tkeep(6 downto 0) => B"0000000",
-      s_axis_tlast => '0',
       s_axis_tready => out_s_axis_tready,
-      s_axis_tvalid => out_s_axis_tlast
+      s_axis_tvalid => out_s_axis_tvalid
     );
 rst_i_1: unisim.vcomponents.LUT4
     generic map(
@@ -15176,15 +15233,11 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tlast : in STD_LOGIC;
     m_axis_aresetn : in STD_LOGIC;
     m_axis_aclk : in STD_LOGIC;
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tlast : out STD_LOGIC
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix : entity is true;
@@ -15208,16 +15261,12 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_PARAMETER of m_axis_aclk : signal is "XIL_INTERFACENAME m_axis_aclk, ASSOCIATED_BUSIF m_axis, ASSOCIATED_RESET m_axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_aresetn : signal is "xilinx.com:signal:reset:1.0 m_axis_aresetn RST";
   attribute X_INTERFACE_PARAMETER of m_axis_aresetn : signal is "XIL_INTERFACENAME m_axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of m_axis_tlast : signal is "xilinx.com:interface:axis:1.0 m_axis TLAST";
-  attribute X_INTERFACE_PARAMETER of m_axis_tlast : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_tready : signal is "xilinx.com:interface:axis:1.0 m_axis TREADY";
   attribute X_INTERFACE_INFO of m_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 m_axis TVALID";
   attribute X_INTERFACE_INFO of s_axis_aclk : signal is "xilinx.com:signal:clock:1.0 s_axis_aclk CLK";
   attribute X_INTERFACE_PARAMETER of s_axis_aclk : signal is "XIL_INTERFACENAME s_axis_aclk, ASSOCIATED_BUSIF s_axis, ASSOCIATED_RESET s_axis_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_aresetn : signal is "xilinx.com:signal:reset:1.0 s_axis_aresetn RST";
   attribute X_INTERFACE_PARAMETER of s_axis_aresetn : signal is "XIL_INTERFACENAME s_axis_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
-  attribute X_INTERFACE_INFO of s_axis_tlast : signal is "xilinx.com:interface:axis:1.0 s_axis TLAST";
-  attribute X_INTERFACE_PARAMETER of s_axis_tlast : signal is "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tready : signal is "xilinx.com:interface:axis:1.0 s_axis TREADY";
   attribute X_INTERFACE_INFO of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 s_axis TVALID";
   attribute X_INTERFACE_INFO of sys_clk : signal is "xilinx.com:signal:clock:1.0 sys_clk CLK";
@@ -15225,9 +15274,9 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   attribute X_INTERFACE_INFO of sys_rst_n : signal is "xilinx.com:signal:reset:1.0 sys_rst_n RST";
   attribute X_INTERFACE_PARAMETER of sys_rst_n : signal is "XIL_INTERFACENAME sys_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 m_axis TDATA";
-  attribute X_INTERFACE_INFO of m_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 m_axis TKEEP";
+  attribute X_INTERFACE_PARAMETER of m_axis_tdata : signal is "XIL_INTERFACENAME m_axis, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 s_axis TDATA";
-  attribute X_INTERFACE_INFO of s_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 s_axis TKEEP";
+  attribute X_INTERFACE_PARAMETER of s_axis_tdata : signal is "XIL_INTERFACENAME s_axis, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN Accumulator_bd_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
   step_debug(7) <= \<const0>\;
   step_debug(6) <= \<const0>\;
@@ -15247,15 +15296,11 @@ inst: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Accumulator
       m_axis_aclk => m_axis_aclk,
       m_axis_aresetn => m_axis_aresetn,
       m_axis_tdata(63 downto 0) => m_axis_tdata(63 downto 0),
-      m_axis_tkeep(7 downto 0) => m_axis_tkeep(7 downto 0),
-      m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
       m_axis_tvalid => m_axis_tvalid,
       s_axis_aclk => s_axis_aclk,
       s_axis_aresetn => s_axis_aresetn,
       s_axis_tdata(63 downto 0) => s_axis_tdata(63 downto 0),
-      s_axis_tkeep(7 downto 0) => s_axis_tkeep(7 downto 0),
-      s_axis_tlast => s_axis_tlast,
       s_axis_tready => s_axis_tready,
       s_axis_tvalid => s_axis_tvalid,
       step_debug(7 downto 3) => NLW_inst_step_debug_UNCONNECTED(7 downto 3),

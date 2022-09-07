@@ -134,14 +134,32 @@ module Accumulator_bd_axi_smc_0 (
   input bit [1 : 0] M00_AXI_rresp,
   input bit_as_bool M00_AXI_rlast,
   input bit_as_bool M00_AXI_rvalid,
-  output bit_as_bool M00_AXI_rready
+  output bit_as_bool M00_AXI_rready,
+  input bit [31 : 0] S00_AXI_awaddr,
+  input bit [7 : 0] S00_AXI_awlen,
+  input bit [2 : 0] S00_AXI_awsize,
+  input bit [1 : 0] S00_AXI_awburst,
+  input bit [0 : 0] S00_AXI_awlock,
+  input bit [3 : 0] S00_AXI_awcache,
+  input bit [2 : 0] S00_AXI_awprot,
+  input bit [3 : 0] S00_AXI_awqos,
+  input bit_as_bool S00_AXI_awvalid,
+  output bit_as_bool S00_AXI_awready,
+  input bit [63 : 0] S00_AXI_wdata,
+  input bit [7 : 0] S00_AXI_wstrb,
+  input bit_as_bool S00_AXI_wlast,
+  input bit_as_bool S00_AXI_wvalid,
+  output bit_as_bool S00_AXI_wready,
+  output bit [1 : 0] S00_AXI_bresp,
+  output bit_as_bool S00_AXI_bvalid,
+  input bit_as_bool S00_AXI_bready
 );
 endmodule
 `endif
 
 `ifdef XCELIUM
 (* XMSC_MODULE_EXPORT *)
-module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI_arsize,S00_AXI_arburst,S00_AXI_arlock,S00_AXI_arcache,S00_AXI_arprot,S00_AXI_arqos,S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata,S00_AXI_rresp,S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr,S01_AXI_awlen,S01_AXI_awsize,S01_AXI_awburst,S01_AXI_awlock,S01_AXI_awcache,S01_AXI_awprot,S01_AXI_awqos,S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata,S01_AXI_wstrb,S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp,S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr,M00_AXI_awlen,M00_AXI_awsize,M00_AXI_awburst,M00_AXI_awlock,M00_AXI_awcache,M00_AXI_awprot,M00_AXI_awqos,M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata,M00_AXI_wstrb,M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp,M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr,M00_AXI_arlen,M00_AXI_arsize,M00_AXI_arburst,M00_AXI_arlock,M00_AXI_arcache,M00_AXI_arprot,M00_AXI_arqos,M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata,M00_AXI_rresp,M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready)
+module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI_arsize,S00_AXI_arburst,S00_AXI_arlock,S00_AXI_arcache,S00_AXI_arprot,S00_AXI_arqos,S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata,S00_AXI_rresp,S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr,S01_AXI_awlen,S01_AXI_awsize,S01_AXI_awburst,S01_AXI_awlock,S01_AXI_awcache,S01_AXI_awprot,S01_AXI_awqos,S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata,S01_AXI_wstrb,S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp,S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr,M00_AXI_awlen,M00_AXI_awsize,M00_AXI_awburst,M00_AXI_awlock,M00_AXI_awcache,M00_AXI_awprot,M00_AXI_awqos,M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata,M00_AXI_wstrb,M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp,M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr,M00_AXI_arlen,M00_AXI_arsize,M00_AXI_arburst,M00_AXI_arlock,M00_AXI_arcache,M00_AXI_arprot,M00_AXI_arqos,M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata,M00_AXI_rresp,M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready,S00_AXI_awaddr,S00_AXI_awlen,S00_AXI_awsize,S00_AXI_awburst,S00_AXI_awlock,S00_AXI_awcache,S00_AXI_awprot,S00_AXI_awqos,S00_AXI_awvalid,S00_AXI_awready,S00_AXI_wdata,S00_AXI_wstrb,S00_AXI_wlast,S00_AXI_wvalid,S00_AXI_wready,S00_AXI_bresp,S00_AXI_bvalid,S00_AXI_bready)
 (* integer foreign = "SystemC";
 *);
   input bit aclk;
@@ -212,12 +230,30 @@ module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_A
   input bit M00_AXI_rlast;
   input bit M00_AXI_rvalid;
   output wire M00_AXI_rready;
+  input bit [31 : 0] S00_AXI_awaddr;
+  input bit [7 : 0] S00_AXI_awlen;
+  input bit [2 : 0] S00_AXI_awsize;
+  input bit [1 : 0] S00_AXI_awburst;
+  input bit [0 : 0] S00_AXI_awlock;
+  input bit [3 : 0] S00_AXI_awcache;
+  input bit [2 : 0] S00_AXI_awprot;
+  input bit [3 : 0] S00_AXI_awqos;
+  input bit S00_AXI_awvalid;
+  output wire S00_AXI_awready;
+  input bit [63 : 0] S00_AXI_wdata;
+  input bit [7 : 0] S00_AXI_wstrb;
+  input bit S00_AXI_wlast;
+  input bit S00_AXI_wvalid;
+  output wire S00_AXI_wready;
+  output wire [1 : 0] S00_AXI_bresp;
+  output wire S00_AXI_bvalid;
+  input bit S00_AXI_bready;
 endmodule
 `endif
 
 `ifdef RIVIERA
 (* SC_MODULE_EXPORT *)
-module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI_arsize,S00_AXI_arburst,S00_AXI_arlock,S00_AXI_arcache,S00_AXI_arprot,S00_AXI_arqos,S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata,S00_AXI_rresp,S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr,S01_AXI_awlen,S01_AXI_awsize,S01_AXI_awburst,S01_AXI_awlock,S01_AXI_awcache,S01_AXI_awprot,S01_AXI_awqos,S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata,S01_AXI_wstrb,S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp,S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr,M00_AXI_awlen,M00_AXI_awsize,M00_AXI_awburst,M00_AXI_awlock,M00_AXI_awcache,M00_AXI_awprot,M00_AXI_awqos,M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata,M00_AXI_wstrb,M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp,M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr,M00_AXI_arlen,M00_AXI_arsize,M00_AXI_arburst,M00_AXI_arlock,M00_AXI_arcache,M00_AXI_arprot,M00_AXI_arqos,M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata,M00_AXI_rresp,M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready)
+module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI_arsize,S00_AXI_arburst,S00_AXI_arlock,S00_AXI_arcache,S00_AXI_arprot,S00_AXI_arqos,S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata,S00_AXI_rresp,S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr,S01_AXI_awlen,S01_AXI_awsize,S01_AXI_awburst,S01_AXI_awlock,S01_AXI_awcache,S01_AXI_awprot,S01_AXI_awqos,S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata,S01_AXI_wstrb,S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp,S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr,M00_AXI_awlen,M00_AXI_awsize,M00_AXI_awburst,M00_AXI_awlock,M00_AXI_awcache,M00_AXI_awprot,M00_AXI_awqos,M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata,M00_AXI_wstrb,M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp,M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr,M00_AXI_arlen,M00_AXI_arsize,M00_AXI_arburst,M00_AXI_arlock,M00_AXI_arcache,M00_AXI_arprot,M00_AXI_arqos,M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata,M00_AXI_rresp,M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready,S00_AXI_awaddr,S00_AXI_awlen,S00_AXI_awsize,S00_AXI_awburst,S00_AXI_awlock,S00_AXI_awcache,S00_AXI_awprot,S00_AXI_awqos,S00_AXI_awvalid,S00_AXI_awready,S00_AXI_wdata,S00_AXI_wstrb,S00_AXI_wlast,S00_AXI_wvalid,S00_AXI_wready,S00_AXI_bresp,S00_AXI_bvalid,S00_AXI_bready)
   input bit aclk;
   input bit aresetn;
   input bit [31 : 0] S00_AXI_araddr;
@@ -286,5 +322,23 @@ module Accumulator_bd_axi_smc_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_A
   input bit M00_AXI_rlast;
   input bit M00_AXI_rvalid;
   output wire M00_AXI_rready;
+  input bit [31 : 0] S00_AXI_awaddr;
+  input bit [7 : 0] S00_AXI_awlen;
+  input bit [2 : 0] S00_AXI_awsize;
+  input bit [1 : 0] S00_AXI_awburst;
+  input bit [0 : 0] S00_AXI_awlock;
+  input bit [3 : 0] S00_AXI_awcache;
+  input bit [2 : 0] S00_AXI_awprot;
+  input bit [3 : 0] S00_AXI_awqos;
+  input bit S00_AXI_awvalid;
+  output wire S00_AXI_awready;
+  input bit [63 : 0] S00_AXI_wdata;
+  input bit [7 : 0] S00_AXI_wstrb;
+  input bit S00_AXI_wlast;
+  input bit S00_AXI_wvalid;
+  output wire S00_AXI_wready;
+  output wire [1 : 0] S00_AXI_bresp;
+  output wire S00_AXI_bvalid;
+  input bit S00_AXI_bready;
 endmodule
 `endif

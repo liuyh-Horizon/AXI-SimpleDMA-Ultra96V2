@@ -22,22 +22,17 @@ bsp config stdout "psu_uart_1"
 bsp write
 bsp reload
 catch {bsp regenerate}
-domain active {zynqmp_pmufw}
-bsp reload
 domain active {standalone_domain}
 bsp reload
-domain active {zynqmp_fsbl}
-bsp write
-domain active {standalone_domain}
 bsp config stdin "psu_uart_1"
 bsp config stdout "psu_uart_1"
 bsp write
 bsp reload
 catch {bsp regenerate}
 domain active {zynqmp_pmufw}
-bsp config stdin "psu_uart_0"
-bsp config stdout "psu_uart_1"
+bsp reload
 bsp config stdin "psu_uart_1"
+bsp config stdout "psu_uart_1"
 bsp write
 bsp reload
 catch {bsp regenerate}

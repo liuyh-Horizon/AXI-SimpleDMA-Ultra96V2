@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="AXI_SimpleDMA_Accumulator_app_system" platform="/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/AXI_SimpleDMA_Accumulator_Platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" sysConfig="AXI_SimpleDMA_Accumulator_Platform" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
-  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1195977186">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.2146626374">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="AXI_SimpleDMA_Accumulator_app" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
@@ -10,7 +10,7 @@
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </lastBuildOptions>
   </configuration>
-  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.656796047">
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.574829131">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="AXI_SimpleDMA_Accumulator_app" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Release"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>

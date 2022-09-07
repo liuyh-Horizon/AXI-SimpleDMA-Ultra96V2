@@ -34,8 +34,6 @@ xpfw_core.o: xpfw_core.c xpfw_default.h xpfw_config.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/microblaze_sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xusbpsu_endpoint.h \
- zynqmp_pmufw_bsp/psu_pmu_0/include/xdpdma_hw.h \
- zynqmp_pmufw_bsp/psu_pmu_0/include/xdppsu_hw.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xzdma_hw.h pm_csudma.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xcsudma.h \
  zynqmp_pmufw_bsp/psu_pmu_0/include/xcsudma_hw.h pm_common.h \
@@ -154,10 +152,6 @@ zynqmp_pmufw_bsp/psu_pmu_0/include/microblaze_sleep.h:
 zynqmp_pmufw_bsp/psu_pmu_0/include/sleep.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xusbpsu_endpoint.h:
-
-zynqmp_pmufw_bsp/psu_pmu_0/include/xdpdma_hw.h:
-
-zynqmp_pmufw_bsp/psu_pmu_0/include/xdppsu_hw.h:
 
 zynqmp_pmufw_bsp/psu_pmu_0/include/xzdma_hw.h:
 
