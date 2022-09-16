@@ -14731,3 +14731,65 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-24: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-09-07 17:32:27.243
 !MESSAGE XSCT command with result: [disconnect tcfchan#9], Result: [null, ]. Thread: Thread-1355
+!SESSION 2022-09-16 09:02:25.923 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-16 09:02:51.792
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-16 09:02:51.794
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2022-09-16 09:02:51.795
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.ui 4 4 2022-09-16 09:02:51.926
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.571
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.572
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.579
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.593
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.604
+!MESSAGE XSCT Command: [setws /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:02:58.606
+!MESSAGE XSCT command with result: [setws /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:03:02.281
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:03:02.415
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:03:02.416
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-09-16 09:03:02.418
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/data]. Thread: Worker-3: Initializing s/w repositories
+
+!ENTRY org.eclipse.tcf 4 0 2022-09-16 09:11:54.309
+!MESSAGE Cannot send datagram packet to /192.168.166.171
+!STACK 0
+java.io.IOException: Network is unreachable
+	at java.base/java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendDatagramPacket(LocatorService.java:965)
+	at org.eclipse.tcf.internal.services.local.LocatorService.sendSlavesRequest(LocatorService.java:1130)
+	at org.eclipse.tcf.internal.services.local.LocatorService.handleDatagramPacket(LocatorService.java:1254)
+	at org.eclipse.tcf.internal.services.local.LocatorService$3$1.run(LocatorService.java:364)
+	at org.eclipse.tcf.protocol.Protocol$3.run(Protocol.java:243)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)

@@ -15,3 +15,6 @@ timestamp=[2022-09-07 16:30:09], mode=BUILD, duration=0:00:09.855, duration_ms=9
 timestamp=[2022-09-07 16:30:18], mode=BUILD, duration=0:00:00.546, duration_ms=546, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
 timestamp=[2022-09-07 16:33:00], mode=BUILD, duration=0:00:00.795, duration_ms=795, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
 timestamp=[2022-09-07 16:33:10], mode=BUILD, duration=0:00:09.280, duration_ms=9280, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2022-09-16 09:03:01], mode=WORKBENCH_START, duration=0:00:14.524, duration_ms=14524, data={}
+timestamp=[2022-09-16 09:03:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.052, duration_ms=52, data={}
+timestamp=[2022-09-16 09:03:03], mode=WORKBENCH_UI_INIT, duration=0:00:01.730, duration_ms=1730, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=AXI_SimpleDMA_Accumulator_Platform,AXI_SimpleDMA_Accumulator_app,AXI_SimpleDMA_Accumulator_app_system,RemoteSystemsTempFiles}
