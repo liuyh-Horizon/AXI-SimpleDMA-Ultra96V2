@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-i" LaunchTime="1662557219">
+<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-i" LaunchTime="1663611801">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BITSTR-SYSDEF" Name="Accumulator_bd_wrapper.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -134,11 +134,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_axi_gpio_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_axi_gpio_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_Accumulator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_axi_dma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Accumulator_bd_xbar_0"/>
 </GenRun>

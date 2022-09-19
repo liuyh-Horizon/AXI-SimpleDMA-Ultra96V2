@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Wed Sep  7 15:28:27 2022
+| Date         : Mon Sep 19 20:24:51 2022
 | Host         : atlas running 64-bit Ubuntu 20.04.1 LTS
 | Command      : report_utilization -file Accumulator_bd_Accumulator_0_0_utilization_synth.rpt -pb Accumulator_bd_Accumulator_0_0_utilization_synth.pb
 | Design       : Accumulator_bd_Accumulator_0_0
@@ -34,8 +34,8 @@ Table of Contents
 | CLB LUTs*               |  380 |     0 |     70560 |  0.54 |
 |   LUT as Logic          |  380 |     0 |     70560 |  0.54 |
 |   LUT as Memory         |    0 |     0 |     28800 |  0.00 |
-| CLB Registers           |  401 |     0 |    141120 |  0.28 |
-|   Register as Flip Flop |  401 |     0 |    141120 |  0.28 |
+| CLB Registers           |  390 |     0 |    141120 |  0.28 |
+|   Register as Flip Flop |  390 |     0 |    141120 |  0.28 |
 |   Register as Latch     |    0 |     0 |    141120 |  0.00 |
 | CARRY8                  |   19 |     0 |      8820 |  0.22 |
 | F7 Muxes                |    0 |     0 |     35280 |  0.00 |
@@ -58,9 +58,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 1     |          Yes |           - |          Set |
-| 262   |          Yes |           - |        Reset |
+| 263   |          Yes |           - |        Reset |
 | 16    |          Yes |         Set |            - |
-| 122   |          Yes |       Reset |            - |
+| 110   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,13 +149,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |  262 |            Register |
+| FDCE     |  263 |            Register |
 | LUT3     |  142 |                 CLB |
 | LUT6     |  140 |                 CLB |
-| FDRE     |  122 |            Register |
-| LUT4     |   98 |                 CLB |
+| FDRE     |  110 |            Register |
+| LUT4     |   97 |                 CLB |
 | LUT2     |   75 |                 CLB |
-| LUT5     |   42 |                 CLB |
+| LUT5     |   44 |                 CLB |
 | CARRY8   |   19 |                 CLB |
 | FDSE     |   16 |            Register |
 | LUT1     |    7 |                 CLB |

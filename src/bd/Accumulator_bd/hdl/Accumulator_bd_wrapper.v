@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-//Date        : Wed Sep  7 15:26:44 2022
+//Date        : Mon Sep 19 20:22:53 2022
 //Host        : atlas running 64-bit Ubuntu 20.04.1 LTS
 //Command     : generate_target Accumulator_bd_wrapper.bd
 //Design      : Accumulator_bd_wrapper

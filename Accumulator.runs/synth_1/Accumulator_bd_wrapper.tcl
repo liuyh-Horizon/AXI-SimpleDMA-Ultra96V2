@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu3eg-sbva484-1-i
@@ -126,15 +127,6 @@ set_property used_in_implementation false [get_files -all /home/yuhaoliu/Project
 set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_20/bd_a1b1_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/bd_0/ip/ip_21/bd_a1b1_m00bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_2/Accumulator_bd_axi_gpio_0_2.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_0_3/Accumulator_bd_axi_gpio_0_3.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_axi_gpio_3_0/Accumulator_bd_axi_gpio_3_0.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_Accumulator_0_0/Accumulator_bd_Accumulator_0_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/bd/Accumulator_bd/ip/Accumulator_bd_auto_ds_0/Accumulator_bd_auto_ds_0_clocks.xdc]
