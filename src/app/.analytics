@@ -6,3 +6,16 @@ timestamp=[2022-09-19 20:37:03], mode=PLATFORM_GENERATION, duration=0:00:52.103,
 timestamp=[2022-09-19 20:38:36], mode=APP_CREATION, duration=0:00:07.021, duration_ms=7021, data={name=AXI_SimpleDMA_Accumulator_app, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=AXI_SimpleDMA_Accumulator_Platform, application_type=application}
 timestamp=[2022-09-19 20:39:44], mode=BUILD, duration=0:00:01.223, duration_ms=1223, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
 timestamp=[2022-09-19 20:39:58], mode=BUILD, duration=0:00:11.814, duration_ms=11814, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 14:56:39], mode=WORKBENCH_START, duration=0:00:10.794, duration_ms=10794, data={}
+timestamp=[2023-02-06 14:56:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.042, duration_ms=42, data={}
+timestamp=[2023-02-06 14:56:41], mode=WORKBENCH_UI_INIT, duration=0:00:01.481, duration_ms=1481, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=AXI_SimpleDMA_Accumulator_Platform,AXI_SimpleDMA_Accumulator_app,AXI_SimpleDMA_Accumulator_app_system,RemoteSystemsTempFiles}
+timestamp=[2023-02-06 14:57:39], mode=BUILD, duration=0:00:01.479, duration_ms=1479, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 14:57:55], mode=BUILD, duration=0:00:13.063, duration_ms=13063, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 14:59:17], mode=BUILD, duration=0:00:01.462, duration_ms=1462, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 14:59:30], mode=BUILD, duration=0:00:09.862, duration_ms=9862, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:01:02], mode=BUILD, duration=0:00:01.436, duration_ms=1436, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:01:14], mode=BUILD, duration=0:00:09.816, duration_ms=9816, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:03:11], mode=BUILD, duration=0:00:01.441, duration_ms=1441, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:03:24], mode=BUILD, duration=0:00:09.866, duration_ms=9866, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:03:38], mode=BUILD, duration=0:00:01.186, duration_ms=1186, data={name=AXI_SimpleDMA_Accumulator_app, configuration=Debug, clean_build=false}
+timestamp=[2023-02-06 15:03:50], mode=BUILD, duration=0:00:09.724, duration_ms=9724, data={name=AXI_SimpleDMA_Accumulator_app_system, configuration=Debug, clean_build=false}

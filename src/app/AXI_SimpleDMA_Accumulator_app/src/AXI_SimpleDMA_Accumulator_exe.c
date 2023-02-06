@@ -54,7 +54,8 @@
 #include "xil_cache.h"
 #include "sleep.h"
 
-const int MAX_REPEAT_NUM = 10;
+const int MAX_REPEAT_NUM = 100;			// This repeat number is working
+//const int MAX_REPEAT_NUM = 10000;		// This not, I don't know why.......
 int64_t data[11] = {10, 0, -10, -20, -30, -40, -50, -60, -70, -80, -90};
 
 int main()
