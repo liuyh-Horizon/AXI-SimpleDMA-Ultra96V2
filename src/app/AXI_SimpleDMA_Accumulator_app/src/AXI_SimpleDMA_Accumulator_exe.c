@@ -180,6 +180,9 @@ int main()
 
     	XAxiDma_Reset(&DMA);
 
+    	free(out);
+    	free(in);
+
     	cleanup_platform();
         return 0;
     }

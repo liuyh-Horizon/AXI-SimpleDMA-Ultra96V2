@@ -324,3 +324,262 @@ con
 
 15:04:21 INFO  : Launch script is exported to file '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app_system/_ide/scripts/systemdebugger_axi_simpledma_accumulator_app_system_standalone.tcl'
 15:04:46 INFO  : Disconnected from the channel tcfchan#9.
+18:49:27 INFO  : Launching XSCT server: xsct -n  -interactive /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/temp_xsdb_launch_script.tcl
+18:49:30 INFO  : XSCT server has started successfully.
+18:49:30 INFO  : plnx-install-location is set to ''
+18:49:30 INFO  : Successfully done setting XSCT server connection channel  
+18:49:30 INFO  : Successfully done setting workspace for the tool. 
+18:49:32 INFO  : Platform repository initialization has completed.
+18:49:33 INFO  : Successfully done query RDI_DATADIR 
+18:49:33 INFO  : Registering command handlers for Vitis TCF services
+18:50:58 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:51:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:51:28 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:51:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:51:43 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:51:56 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:52:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:52:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:52:19 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+18:52:19 INFO  : 'jtag frequency' command is executed.
+18:52:19 INFO  : Sourcing of '/home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:52:19 INFO  : Context for 'APU' is selected.
+18:52:20 INFO  : System reset is completed.
+18:52:23 INFO  : 'after 3000' command is executed.
+18:52:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+18:52:26 INFO  : Device configured successfully with "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit"
+18:52:26 INFO  : Context for 'APU' is selected.
+18:52:27 INFO  : Hardware design and registers information is loaded from '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa'.
+18:52:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:52:27 INFO  : Context for 'APU' is selected.
+18:52:27 INFO  : Sourcing of '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl' is done.
+18:52:28 INFO  : 'psu_init' command is executed.
+18:52:29 INFO  : 'after 1000' command is executed.
+18:52:29 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+18:52:30 INFO  : 'after 1000' command is executed.
+18:52:30 INFO  : 'psu_ps_pl_reset_config' command is executed.
+18:52:30 INFO  : 'catch {psu_protection}' command is executed.
+18:52:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:52:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:52:31 INFO  : The application '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:52:31 INFO  : 'configparams force-mem-access 0' command is executed.
+18:52:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:52:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:52:31 INFO  : 'con' command is executed.
+18:52:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:52:31 INFO  : Launch script is exported to file '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app_system/_ide/scripts/systemdebugger_axi_simpledma_accumulator_app_system_standalone.tcl'
+18:54:57 INFO  : Disconnected from the channel tcfchan#4.
+18:55:12 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:55:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:55:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:44 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+18:55:44 INFO  : 'jtag frequency' command is executed.
+18:55:44 INFO  : Sourcing of '/home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:55:44 INFO  : Context for 'APU' is selected.
+18:55:45 INFO  : System reset is completed.
+18:55:48 INFO  : 'after 3000' command is executed.
+18:55:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+18:55:51 INFO  : Device configured successfully with "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit"
+18:55:52 INFO  : Context for 'APU' is selected.
+18:55:53 INFO  : Hardware design and registers information is loaded from '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa'.
+18:55:53 INFO  : 'configparams force-mem-access 1' command is executed.
+18:55:53 INFO  : Context for 'APU' is selected.
+18:55:53 INFO  : Sourcing of '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl' is done.
+18:55:54 INFO  : 'psu_init' command is executed.
+18:55:55 INFO  : 'after 1000' command is executed.
+18:55:55 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+18:55:56 INFO  : 'after 1000' command is executed.
+18:55:56 INFO  : 'psu_ps_pl_reset_config' command is executed.
+18:55:56 INFO  : 'catch {psu_protection}' command is executed.
+18:55:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:55:56 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:55:57 INFO  : The application '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:55:57 INFO  : 'configparams force-mem-access 0' command is executed.
+18:55:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:55:57 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:55:57 INFO  : 'con' command is executed.
+18:55:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:55:57 INFO  : Launch script is exported to file '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app_system/_ide/scripts/systemdebugger_axi_simpledma_accumulator_app_system_standalone.tcl'
+18:56:17 INFO  : Disconnected from the channel tcfchan#6.
+18:56:36 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:56:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:57:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:57:32 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+18:57:32 INFO  : 'jtag frequency' command is executed.
+18:57:32 INFO  : Sourcing of '/home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:57:32 INFO  : Context for 'APU' is selected.
+18:57:33 INFO  : System reset is completed.
+18:57:36 INFO  : 'after 3000' command is executed.
+18:57:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+18:57:39 INFO  : Device configured successfully with "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit"
+18:57:39 INFO  : Context for 'APU' is selected.
+18:57:40 INFO  : Hardware design and registers information is loaded from '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa'.
+18:57:40 INFO  : 'configparams force-mem-access 1' command is executed.
+18:57:40 INFO  : Context for 'APU' is selected.
+18:57:40 INFO  : Sourcing of '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl' is done.
+18:57:41 INFO  : 'psu_init' command is executed.
+18:57:42 INFO  : 'after 1000' command is executed.
+18:57:42 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+18:57:43 INFO  : 'after 1000' command is executed.
+18:57:43 INFO  : 'psu_ps_pl_reset_config' command is executed.
+18:57:43 INFO  : 'catch {psu_protection}' command is executed.
+18:57:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:57:43 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:57:44 INFO  : The application '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:57:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:57:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:57:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:57:44 INFO  : 'con' command is executed.
+18:57:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:57:44 INFO  : Launch script is exported to file '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app_system/_ide/scripts/systemdebugger_axi_simpledma_accumulator_app_system_standalone.tcl'
+18:58:03 INFO  : Disconnected from the channel tcfchan#8.
+18:58:19 INFO  : Checking for BSP changes to sync application flags for project 'AXI_SimpleDMA_Accumulator_app'...
+18:58:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa is already opened
+
+18:59:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:44 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+18:59:44 INFO  : 'jtag frequency' command is executed.
+18:59:44 INFO  : Sourcing of '/home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+18:59:44 INFO  : Context for 'APU' is selected.
+18:59:45 INFO  : System reset is completed.
+18:59:48 INFO  : 'after 3000' command is executed.
+18:59:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}' command is executed.
+18:59:51 INFO  : Device configured successfully with "/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit"
+18:59:51 INFO  : Context for 'APU' is selected.
+18:59:52 INFO  : Hardware design and registers information is loaded from '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa'.
+18:59:52 INFO  : 'configparams force-mem-access 1' command is executed.
+18:59:52 INFO  : Context for 'APU' is selected.
+18:59:52 INFO  : Sourcing of '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl' is done.
+18:59:53 INFO  : 'psu_init' command is executed.
+18:59:54 INFO  : 'after 1000' command is executed.
+18:59:54 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+18:59:55 INFO  : 'after 1000' command is executed.
+18:59:55 INFO  : 'psu_ps_pl_reset_config' command is executed.
+18:59:55 INFO  : 'catch {psu_protection}' command is executed.
+18:59:55 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:59:55 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+18:59:56 INFO  : The application '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+18:59:56 INFO  : 'configparams force-mem-access 0' command is executed.
+18:59:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yuhaoliu/Tools/Hardware/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0 && jtag_device_ctx=="jsn-USB-to-JTAG/UART Pod V1-1234-oj1A-14710093-0"}
+fpga -file /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/bitstream/Accumulator_bd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/hw/Accumulator_bd_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/_ide/psinit/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow /home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app/Debug/AXI_SimpleDMA_Accumulator_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:59:56 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+18:59:56 INFO  : 'con' command is executed.
+18:59:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+18:59:56 INFO  : Launch script is exported to file '/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_app_system/_ide/scripts/systemdebugger_axi_simpledma_accumulator_app_system_standalone.tcl'
+19:00:23 INFO  : Disconnected from the channel tcfchan#10.
