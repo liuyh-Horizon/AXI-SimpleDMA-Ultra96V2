@@ -1,9 +1,14 @@
-18:58:28 **** Incremental Build of configuration Debug for project AXI_SimpleDMA_Accumulator_app ****
+12:02:32 **** Incremental Build of configuration Debug for project AXI_SimpleDMA_Accumulator_app ****
 make all 
 Building file: ../src/AXI_SimpleDMA_Accumulator_exe.c
 Invoking: ARM v8 gcc compiler
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AXI_SimpleDMA_Accumulator_exe.o" -I/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/sw/AXI_SimpleDMA_Accumulator_Platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/AXI_SimpleDMA_Accumulator_exe.d" -MT"src/AXI_SimpleDMA_Accumulator_exe.o" -o "src/AXI_SimpleDMA_Accumulator_exe.o" "../src/AXI_SimpleDMA_Accumulator_exe.c"
 Finished building: ../src/AXI_SimpleDMA_Accumulator_exe.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I/home/yuhaoliu/Projects/Verilog/AXI-SimpleDMA-Ultra96V2/src/app/AXI_SimpleDMA_Accumulator_Platform/export/AXI_SimpleDMA_Accumulator_Platform/sw/AXI_SimpleDMA_Accumulator_Platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
  
 Building target: AXI_SimpleDMA_Accumulator_app.elf
 Invoking: ARM v8 gcc linker
@@ -13,9 +18,9 @@ Finished building target: AXI_SimpleDMA_Accumulator_app.elf
 Invoking: ARM v8 Print Size
 aarch64-none-elf-size AXI_SimpleDMA_Accumulator_app.elf  |tee "AXI_SimpleDMA_Accumulator_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  45812	   4352	  20796	  70960	  11530	AXI_SimpleDMA_Accumulator_app.elf
+  45812	   4352	67113276	67163440	400d530	AXI_SimpleDMA_Accumulator_app.elf
 Finished building: AXI_SimpleDMA_Accumulator_app.elf.size
  
 
-18:58:30 Build Finished (took 1s.383ms)
+12:02:34 Build Finished (took 1s.790ms)
 
