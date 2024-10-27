@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Mon Sep 19 20:30:28 2022
+| Date             : Tue Feb 14 18:54:56 2023
 | Host             : atlas running 64-bit Ubuntu 20.04.1 LTS
 | Command          : report_power -file Accumulator_bd_wrapper_power_routed.rpt -pb Accumulator_bd_wrapper_power_summary_routed.pb -rpx Accumulator_bd_wrapper_power_routed.rpx
 | Design           : Accumulator_bd_wrapper
